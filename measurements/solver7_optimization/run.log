@@ -1,0 +1,10 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file 'solver7_optimization.elf'
+=============================== Running model ===============================
+INFO: 00:00:01	cycles: 15689431	retired: 15689432
+INFO: 00:00:02	cycles: 31025195	retired: 31025196
+R B' D2 R' B R' B' R D2 R B
+
+Program exited with code: 0
+================================== Post-run ==================================

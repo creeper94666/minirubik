@@ -1,0 +1,21 @@
+{
+  "input": "21345671111111",
+  "processor": "RV32_ISS",
+  "isa_extensions": [],
+  "solver7_iret": 53779947,
+  "solver6_iret_prior_record": 69539968,
+  "saved_instructions": 15760021,
+  "reduction_percent": 22.663256042913336,
+  "static_data_bytes": 118708,
+  "text_bytes": 2668,
+  "threshold": 50000000,
+  "passes_threshold_for_this_input": false,
+  "weakened_heuristic_states": 12,
+  "heuristic_states_checked": 3674160,
+  "program_exit_code": 0,
+  "measurement_provenance": "AI-executed experiment; student reproduction required under rule.md",
+  "sha256": {
+    "solver7.c": "f5674c02913c81c20fcf9ed10ed6ba7061393dfa20d4dc179bcd91639654fd84",
+    "solver7.elf": "11d38ea935f8a5462b62dcf2a49f32acb62d912e1927420e7e4f7b878c21955c"
+  }
+}

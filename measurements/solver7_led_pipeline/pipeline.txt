@@ -1,0 +1,11 @@
+===== cycles
+63025325
+===== instructions retired
+53952452
+===== cycles per instruction (CPI)
+1.168164238392724
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_5S
+source file: measurements/solver7_led_pipeline/ram_test.elf
+

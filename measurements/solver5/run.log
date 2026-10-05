@@ -1,0 +1,19 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file 'solver5.elf'
+=============================== Running model ===============================
+INFO: 00:00:01	cycles: 3316389	retired: 3316390
+INFO: 00:00:02	cycles: 11139958	retired: 11139958
+INFO: 00:00:03	cycles: 21444639	retired: 21444640
+INFO: 00:00:04	cycles: 32473284	retired: 32473285
+INFO: 00:00:05	cycles: 45700606	retired: 45700606
+INFO: 00:00:06	cycles: 48421508	retired: 48421508
+INFO: 00:00:07	cycles: 55266835	retired: 55266835
+INFO: 00:00:08	cycles: 66860641	retired: 66860641
+INFO: 00:00:09	cycles: 78856212	retired: 78856212
+INFO: 00:00:10	cycles: 93221731	retired: 93221732
+INFO: 00:00:11	cycles: 108095643	retired: 108095644
+R B' D2 R' B R' B' R D2 R B
+
+Program exited with code: 0
+================================== Post-run ==================================

@@ -1,0 +1,10 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file 'measurements/solver7_optimization_led/test_two_rounds.elf'
+=============================== Running model ===============================
+INFO: 00:00:01	cycles: 15186115	retired: 15186115
+INFO: 00:00:02	cycles: 30571778	retired: 30571779
+R B' D2 R' B R' B' R D2 R B
+
+Program exited with code: 0
+================================== Post-run ==================================

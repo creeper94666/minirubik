@@ -1,0 +1,9 @@
+===== cycles
+110209922
+===== instructions retired
+110209922
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_ISS
+source file: solver5.elf
+

@@ -1,0 +1,23 @@
+{
+  "input": "21345671111111",
+  "processor": "RV32_ISS",
+  "isa_extensions": [],
+  "solver6_iret": 69539968,
+  "solver5_iret_prior_record": 110209922,
+  "saved_instructions": 40669954,
+  "reduction_percent": 36.90226184898307,
+  "static_data_bytes": 118708,
+  "remaining_static_budget_bytes": 12364,
+  "text_bytes": 2556,
+  "program_exit_code": 0,
+  "threshold": 50000000,
+  "passes_threshold_for_this_input": false,
+  "measurement_provenance": "AI-executed experiment; reproduce independently for assignment reporting under rule.md",
+  "comparison_caveat": "Changes include both direct-state lookup and host-precomputed distance tables; not an isolated lookup benchmark.",
+  "sha256": {
+    "solver6.c": "a24e1934f0958bb174eaa2f2065da2b46280ce7605c11ea3244f50b9a71ea147",
+    "solver6_tables.h": "765faacdb2c075622910bde561189697c3fcba4afdd199a30bd9ec35f7617e51",
+    "solver6.elf": "d1a43109d0903f8ed37f878dd5fe830035b0f7c602d566af54acbacd689a163a"
+  },
+  "ripes_executable_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}

@@ -1,0 +1,25 @@
+{
+  "input": "21345671111111",
+  "processor": "RV32_ISS",
+  "isa_extensions": [],
+  "solver4_iret_prior_record": 184068852,
+  "solver5_iret": 110209922,
+  "solver5_cycles": 110209922,
+  "saved_instructions": 73858930,
+  "reduction_percent": 40.125707960627686,
+  "threshold": 50000000,
+  "passes_threshold_for_this_input": false,
+  "program_exit_code": 0,
+  "measurement_provenance": "AI-executed development measurement; student reproduction required by rule.md",
+  "sha256": {
+    "solver5.c": "6505cfaa59e9c7098e98b85714f0e4efd52cb940b1c591eb279dd008ea285a2d",
+    "solver5.elf": "8ca76513a78ca5b809f318ebcf63a02f53bf98b7d91f531bd407dc46b9af37ee"
+  },
+  "ripes_bundle_version": {
+    "CFBundleInfoDictionaryVersion": "6.0",
+    "CFBundleShortVersionString": "1.0",
+    "CFBundleVersion": "1.0.0",
+    "LSMinimumSystemVersion": ""
+  },
+  "ripes_executable_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}
