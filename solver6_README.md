@@ -1,5 +1,11 @@
 # solver6: direct state distance lookup experiment
 
+> **Historical version — solver6.** Retained as an earlier optimization stage.
+> For the current C solver use [solver7_search.c](solver7_search.c); for optimized
+> RV32I use [solver7_optimization.s](solver7_optimization.s).
+> See the [current-version index](README.md#current-rv32i-version).
+> Build commands and measurements below apply only to this historical version.
+
 AI-assisted C implementation and development measurement of the user's requested direct-state lookup experiment. Preserve AI disclosure; this is not student-authored assembly, analysis or measurements for submission under rule.md section 18. solver4 and solver5 remain unchanged.
 
 The search still carries state_t, uses the same moves and incorrect-cubie bound, and takes the maximum of the same two abstract distances. The heuristic now accesses:

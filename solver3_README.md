@@ -1,5 +1,11 @@
 # Freestanding solver3
 
+> **Historical version — solver3.** Retained as an earlier optimization stage.
+> For the current C solver use [solver7_search.c](solver7_search.c); for optimized
+> RV32I use [solver7_optimization.s](solver7_optimization.s).
+> See the [current-version index](README.md#current-rv32i-version).
+> Build commands and measurements below apply only to this historical version.
+
 `solver3.c` retains the solver2 search, with no standard headers or external C
 library. It defines its own byte-copy and byte-fill routines. Target output uses
 Ripes character-print ecall 11; startup exits through ecall 10.

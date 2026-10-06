@@ -1,14 +1,61 @@
-> **RV32I coursework:** [current source, validation and remaining requirements](docs/submission-status.md).
-> [Build the shared GUI/CLI assembly](solver7_optimization_led_README.md).
-> The development code and records include disclosed AI assistance.
+# minirubik — RV32I coursework
 
-# minirubik
+## Current RV32I version
+
+**Start with the files below. `solver7.c` and `solver7.s` are older baselines;
+the current C solver is `solver7_search.c`.**
+
+| Component | Current source | Build / guide |
+| --- | --- | --- |
+| C solver | [solver7_search.c](solver7_search.c) | [build_solver7_search.sh](build_solver7_search.sh), [C guide](solver7_search_README.md) |
+| Optimized RV32I solver | [solver7_optimization.s](solver7_optimization.s) | [build_solver7_optimization.sh](build_solver7_optimization.sh) |
+| Shared GUI / CLI assembly | [solver7_optimization_led.s](solver7_optimization_led.s) | [LED build guide](solver7_optimization_led_README.md), [builder](tools/build_solver7_optimization_led.py) |
+| LED rendering and replay | [cube_led.c](cube_led.c), [cube_led.h](cube_led.h), [solver7_led_replay.c](solver7_led_replay.c) | Used by the shared assembly builder |
+
+Build the current C and renderer-disabled assembly:
+
+```sh
+sh build_solver7_search.sh
+sh build_solver7_optimization.sh
+python3 tools/build_solver7_optimization_led.py --render 0
+```
+
+For LED animation, follow the [GUI build instructions](solver7_optimization_led_README.md#gui-build)
+and supply the peripheral base exported by Ripes. `RENDER=0` disables the renderer;
+`RENDER=1` enables it in the shared source.
+
+The current assembly passes all **2,644 distance-11 inputs**, with a maximum of
+**38,543,830 retired instructions** on the pinned RV32_ISS build. Solved, one-move
+and distance-11 cases also pass on RV32_5S. See [validation evidence](measurements/solver7_submission_validation/README.md).
+
+Development code and records include disclosed AI assistance. See
+[submission status](docs/submission-status.md) for remaining student-owned work
+and GUI observations; these results do not mean the entire assignment is complete.
+
+## Historical files — retained for comparison
+
+| Files | Role |
+| --- | --- |
+| `solver.c`, `mini.c`, `Makefile`, `report.md` | Upstream host BFS solver, oracle/reference and documentation |
+| `solver2.c` through `solver7.c` | Earlier C development stages |
+| `solver3.s` through `solver7.s` | Compiler-generated assembly for earlier C stages |
+| `build_solver3.sh` through `build_solver7.sh` | Build the corresponding historical stages |
+| `solver7_led.c`, `build_solver7_led.sh` | Earlier C-based LED integration |
+| `test_all.c` | Historical solver2 test; not exhaustive verification of the current solver |
+
+These files preserve the optimization history and reference implementations.
+Their measurements apply to their own versions. Use the current-version table
+above for new builds; the upstream instructions below describe the host baseline.
+
+---
+
+## Upstream host solver — historical baseline
 
 An optimal C99 solver for the 2×2×2 Rubik’s Cube. It builds a breadth-first
 table for all 3,674,160 states and solves every valid position in at most 11
 half-turn-metric moves.
 
-## Why a cube is a graph
+### Why a cube is a graph
 
 Ernő Rubik created the original cube in 1974 to demonstrate how parts can move
 independently without breaking the whole. A 3×3 cube has 20 moving pieces and
@@ -27,7 +74,7 @@ the article’s 3×3 Roux stages or a library of memorized algorithms.
 The solver gives the eight corner positions the numbers `0–7`. The 2.5D
 walkthrough below shows where those numbers are on the physical cube.
 
-## How it works
+### How it works
 
 1. Fix one corner to remove whole-cube rotations.
 2. Rank the remaining corner permutation and six independent orientations into
@@ -37,7 +84,7 @@ walkthrough below shows where those numbers are on the physical cube.
 4. Store one move toward solved for every state; following those moves gives an
    optimal solution of at most 11 moves.
 
-## Build and run
+### Build and run the upstream host baseline
 
 ```sh
 make
@@ -55,7 +102,7 @@ eight times the runtime and three times the memory for its brevity.
 The 14-digit argument describes the scramble and the printed line is the
 solution. Both formats are explained below.
 
-### Reading the 14-digit input
+#### Reading the 14-digit input
 
 The program receives one 14-digit code with no spaces. For explanation, split
 it into two groups:
@@ -71,7 +118,7 @@ space; a cubie is the physical corner that can move to another seat. In the
 solved cube, cubie 1 sits in position 1, cubie 2 in position 2, and so on.
 The real cube has no printed numbers; `0–7` are labels used only by this solver.
 
-#### Step 1: Hold the cube in one direction
+##### Step 1: Hold the cube in one direction
 
 Keep `FRONT` facing you and `UP` pointing upward. Position `0` is the corner
 nearest the upper-left of the front face. It is an anchor for describing the
@@ -95,7 +142,7 @@ other corners; the physical cubie is not glued in place.
 
 `R` marks the narrow `RIGHT` face.
 
-#### Step 2: Separate the front and back layers
+##### Step 2: Separate the front and back layers
 
 A 2×2×2 cube has only corner cubies. Looking from the fixed direction, four
 corner positions touch the front face and four touch the back face. Each
@@ -116,7 +163,7 @@ The front layer runs clockwise from its upper-left corner as `0, 1, 2, 3`.
 The back layer is drawn as if seen through the cube from the front: `7` is
 upper-left, followed clockwise by `4, 5, 6`.
 
-#### Step 3: Join the two layers into positions 0–7
+##### Step 3: Join the two layers into positions 0–7
 
 Slide the back square up and to the right, the same direction the cube recedes
 in Step 1, to get the complete 2.5D position map. The back edges are drawn
@@ -137,7 +184,7 @@ through the front face rather than hidden behind it:
 The seven characters of `P` describe positions `1, 2, 3, 4, 5, 6, 7` in that
 order; the anchor at position `0` is left out.
 
-#### Step 4: Put the cubies into those positions
+##### Step 4: Put the cubies into those positions
 
 Compare the position map on the left with the filled cube on the right. Read
 `P = 2134567` from left to right to fill the positions. The arrows below the
@@ -194,7 +241,7 @@ being twisted. For a valid cube, convert orientation digits to `0`, `1`, and
 `2`; their sum must be divisible by three. The solved code is
 `12345671111111`. `make check` uses the exchanged-corner example above.
 
-## Reading the solution
+### Reading the solution
 
 ```sh
 $ ./solver 21345671111111

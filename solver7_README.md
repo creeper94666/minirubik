@@ -1,5 +1,11 @@
 # solver7: remove incorrect-cubie lower bound
 
+> **Historical version — solver7.** Retained as an earlier optimization stage.
+> For the current C solver use [solver7_search.c](solver7_search.c); for optimized
+> RV32I use [solver7_optimization.s](solver7_optimization.s).
+> See the [current-version index](README.md#current-rv32i-version).
+> Build commands and measurements below apply only to this historical version.
+
 AI-assisted C experiment requested by the user. solver6 is preserved. The only algorithmic change is removal of incorrect-cubie counting and its `(incorrect + 3) / 4` bound. The heuristic now returns `max(hp, ho)` from the same direct-state abstract distance tables. Generated assembly is a compiler baseline, not hand-written assembly for submission.
 
 ## Verification

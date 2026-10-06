@@ -1,5 +1,10 @@
 # Solver7 C LED replay
 
+> **Historical C-based LED integration.** The current GUI / CLI build is
+> [solver7_optimization_led.s](solver7_optimization_led.s); follow its
+> [LED build guide](solver7_optimization_led_README.md).
+> This page's commands and results apply to the older `solver7_led.c` integration.
+
 AI-assisted C prototype. The solver first computes and validates a complete solution, then renders the initial state and one frame after each solution move. Half turns are one frame/HTM move. Invalid inputs or failed validation do not draw. The existing optimized assembly is unchanged; this renderer currently integrates with the C solver7 implementation.
 
 ## Representation and geometry

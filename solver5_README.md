@@ -1,5 +1,11 @@
 # solver5: indexed heuristic initialization
 
+> **Historical version — solver5.** Retained as an earlier optimization stage.
+> For the current C solver use [solver7_search.c](solver7_search.c); for optimized
+> RV32I use [solver7_optimization.s](solver7_optimization.s).
+> See the [current-version index](README.md#current-rv32i-version).
+> Build commands and measurements below apply only to this historical version.
+
 AI-assisted C prototype implementing the user's selected nine-move transition-table experiment. solver4 is preserved. This is not student-authored assembly or a submission-ready assignment solution; retain AI disclosure and follow rule.md section 18.
 
 Only heuristic initialization changes: `transition[rank][move]` replaces decode/move/encode inside repeated distance relaxation. The search and its state representation remain unchanged, including permutation/orientation ranking on each heuristic call. Distances are still built on the target. This is not a fully indexed search.

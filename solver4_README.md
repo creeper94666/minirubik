@@ -1,5 +1,11 @@
 # solver4: pointer-based direct moves
 
+> **Historical version — solver4.** Retained as an earlier optimization stage.
+> For the current C solver use [solver7_search.c](solver7_search.c); for optimized
+> RV32I use [solver7_optimization.s](solver7_optimization.s).
+> See the [current-version index](README.md#current-rv32i-version).
+> Build commands and measurements below apply only to this historical version.
+
 `solver3` remains unchanged. `solver4.c` uses:
 
 ```c
