@@ -25,3 +25,13 @@ not new runs. Local original evidence remains intact.
 See [verification results](remaining-verification-results.md),
 [report corrections](report-final-review.md), and
 [publication manifest](../measurements/publication_20261007/manifest.json).
+
+## Confirmed publication outcome
+
+Evidence commit: [42e4cd9fbecb3fbe7d50455a023379fbab0b2a55](https://github.com/creeper94666/minirubik/commit/42e4cd9fbecb3fbe7d50455a023379fbab0b2a55). The GitHub main ref and all 93 staged file blob hashes were checked; README received only the new evidence links and a Markdown emphasis fix.
+
+The intended tag is `hw1-phase1-20261007`. It was prepared locally, but HTTPS
+push failed because no Git credentials were available; the browser also requires
+GitHub login. A remote API check returned 404 for this tag. Thus no remote tag
+or completed submission is claimed. HackMD and the Google form likewise await
+user login. This is an authentication blocker, not a pending authorization request.
