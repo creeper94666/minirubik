@@ -1,0 +1,1 @@
+{"states":3674160,"diameter":11,"distance11_count":2644,"H1":"PASS","H2":"PASS","heuristic_max":7,"permutation_max":7,"orientation_max":6,"permutation_legal_slots":5040,"permutation_unused_slots":112609,"move_comparisons":51921,"bfs_seconds":0.145528000,"h1_seconds":0.179748000,"h2_seconds":0.000379000,"histogram":[1,9,54,321,1847,9992,50136,227536,870072,1887748,623800,2644]}

@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "model": "RV32_ISS",
+      "host_bytes_per_additional_guest_byte": 47.085043988269796,
+      "projected_incremental_host_bytes_for_baseline": 866619727.8123168,
+      "small_retired_per_process_second": 3648959.1002444746,
+      "large_retired_per_process_second": 2801330.717958064
+    },
+    {
+      "model": "RV32_5S",
+      "host_bytes_per_additional_guest_byte": 18.044965786901273,
+      "projected_incremental_host_bytes_for_baseline": 332125065.9237537,
+      "small_retired_per_process_second": 4872.544973330179,
+      "large_retired_per_process_second": 8936.8067675768
+    }
+  ],
+  "scope": "One repetition per pair under concurrent validation load; process time includes startup. AI-executed smoke test, not isolated student baseline measurements."
+}

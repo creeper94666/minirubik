@@ -1,0 +1,43 @@
+{
+  "processor": "RV32_ISS",
+  "input": "21345671111111",
+  "distance": 11,
+  "path": [
+    "R",
+    "B'",
+    "D2",
+    "R'",
+    "B",
+    "R'",
+    "B'",
+    "R",
+    "D2",
+    "R",
+    "B"
+  ],
+  "replay": "PASS",
+  "retired_instructions": 15147934,
+  "wall_seconds": 3.4510674169287086,
+  "command": [
+    "/Applications/Ripes.app/Contents/MacOS/Ripes",
+    "--mode",
+    "cli",
+    "--src",
+    "${PROJECT_ROOT}/measurements/solver7_submission_validation/models/RV32_ISS-21345671111111.elf",
+    "-t",
+    "elf",
+    "--proc",
+    "RV32_ISS",
+    "--iret",
+    "--cycles",
+    "--runinfo",
+    "--timeout",
+    "0",
+    "-v",
+    "--output",
+    "${PROJECT_ROOT}/measurements/solver7_submission_validation/models/RV32_ISS-21345671111111.txt"
+  ],
+  "elf_sha256": "9cf031504897e541e37f875217c3d3ac00406cdd3f70745b76e86a76bfec1edd",
+  "source_sha256": "9b7bc5cd321928ef1324c59b65eaf2547f07eae7c561c70a04e5bd3544ef7ce0",
+  "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}

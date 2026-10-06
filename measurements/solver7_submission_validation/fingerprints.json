@@ -1,0 +1,11 @@
+{
+  "files": {
+    "solver7_optimization.s": "c39d95a777044120b66320dd85668ea4dd3aeba52f83879b7554f73b05ccfef6",
+    "solver7_search.c": "23df991e6ac85882a45aa27588f504dd49b573658a35b84d264b43d130725998",
+    "solver7_search_sequences.h": "bc0f3ffa364fba30780d8623798ad6623075c7f6ee1e94375d3cee7f2c67617f",
+    "solver7_search_sequences.inc": "f64c17bc7542d9f2a91b5404b48a7131a6262430095c84014482767f3b16b960",
+    "solver7_optimization_led.s": "9b7bc5cd321928ef1324c59b65eaf2547f07eae7c561c70a04e5bd3544ef7ce0"
+  },
+  "solver_elf_sha256": "e0e34f1535ce81b015331c3c798fca0348f16c93dbe94ee5b725858329f1c120",
+  "provenance": "Sources are retained once at repository root. Generated binaries and duplicate snapshots are omitted; build scripts recreate them."
+}

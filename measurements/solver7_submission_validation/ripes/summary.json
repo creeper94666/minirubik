@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "states_measured": 2644,
+  "maximum_instructions": 38543830,
+  "slowest_inputs": [
+    "54721631111111"
+  ],
+  "over_threshold": 0,
+  "all_within_threshold": true,
+  "workers": 4,
+  "batch_started_utc": "2026-10-06T09:17:44Z",
+  "batch_wall_seconds": 1916.3858491249848,
+  "sum_case_elapsed_seconds": 7636.082785187522,
+  "fingerprint": {
+    "elf_sha256": "e0e34f1535ce81b015331c3c798fca0348f16c93dbe94ee5b725858329f1c120",
+    "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4",
+    "cases_sha256": "af51a83662001fa126e06dfbae751e110e4605bda9b60dd212aa73914d487c7f",
+    "input_offset": 138348
+  },
+  "provenance": "AI-executed actual Ripes RV32_ISS runs; only embedded input bytes differ; renderer absent; includes startup, search, verification, output and exit"
+}

@@ -1,5 +1,7 @@
 # AI-assisted experimental optimization of compiler-generated solver7.s.
 # Build with build_solver7_optimization.sh; original solver7 files preserved.
+# Search: canonical suffix masks + inverse-orientation bound (solver7_search.c).
+# Frame: inverse scratch16..22, moves40..87, states88..255, saves256..303, masks304..351.
 	.file	"solver7.c"
 	.option nopic
 	.option norelax
@@ -30,7 +32,7 @@ ecall
 	.align	2
 	.type	solve.part.0, @function
 solve.part.0:
-	addi	sp,sp,-304
+	addi	sp,sp,-368
 	sw	s0,300(sp)
 	sw	s2,292(sp)
 	sw	s4,284(sp)
@@ -115,6 +117,88 @@ solve.part.0:
 	bge	s2,a5,.L2
 	mv	s2,a5
 .L2:
+	# Initial threshold includes the inverse-orientation lower bound.
+	mv t1,a4
+.Lsearch_initial_inverse_begin:
+	addi t2,sp,16
+	li t4,3
+	lbu a4,0(t1)
+	lbu a7,7(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero0
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero0:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,1(t1)
+	lbu a7,8(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero1
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero1:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,2(t1)
+	lbu a7,9(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero2
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero2:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,3(t1)
+	lbu a7,10(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero3
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero3:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,4(t1)
+	lbu a7,11(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero4
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero4:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,5(t1)
+	lbu a7,12(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero5
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero5:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,6(t1)
+	lbu a7,13(t1)
+	beqz a7,.Lsearch_initial_inverse_begin_zero6
+	sub a7,t4,a7
+.Lsearch_initial_inverse_begin_zero6:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a6,16(sp)
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,17(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,18(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,19(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,20(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,21(sp)
+	add a6,a6,a7
+	add a6,s4,a6
+	lbu a6,0(a6)
+.Lsearch_initial_inverse_end:
+	bge s2,a6,.Lsearch_initial_max
+	mv s2,a6
+.Lsearch_initial_max:
+	mv a4,t1
 	li	a5,11
 	addi	s9,sp,88
 	addi	s6,sp,95
@@ -128,8 +212,8 @@ solve.part.0:
 	li	s0,7
 	addi	s3,sp,40
 	li	t3,2
-	addi	s8,s4,732
-	addi	s7,s4,796
+	la s7,opt_sequence3
+	la s8,opt_sequence5
 	mv	a6,a4
 .L3:
 	mv	a4,a6
@@ -143,6 +227,7 @@ solve.part.0:
 	addi	a4,a4,1
 	bne	s6,a5,.L5
 	sw	zero,40(sp)
+	sw zero,304(sp)
 	li	a0,0
 	addi	a4,s2,-1
 	mv	a3,a6
@@ -184,41 +269,35 @@ solve.part.0:
 	lw	s5,280(sp)
 	lw	s6,276(sp)
 	lw	s9,264(sp)
-	addi	sp,sp,304
+	addi	sp,sp,368
 	jr	ra
 .L7:
 	beq	s2,a0,.L65
 	slli	t6,a0,2
 	add	a5,s3,t6
 	lw	s1,0(a5)
+	lw s11,264(a5)
 	li	a5,9
 	addi	t0,s1,1
 	bgt	t0,a5,.L66
-	andi	a5,t0,0xff
 	sub	t5,t1,a0
-	addi	t2,a5,-3
-	addi	a6,a5,-6
 	slli	t5,t5,1
 	addi	a7,sp,256
-	sw	a2,12(sp)
 	mv	a2,a4
 	add	t5,a7,t5
-	mv	a4,a5
-	andi	t2,t2,0xff
 	mv	a5,t6
-	andi	t4,a6,0xff
 	addi	s10,a0,1
 	mv	t6,a2
-	bne	a0,zero,.L67
 .L51:
-	andi	a6,s1,0xff
-	li	a2,0
-	bgtu	a6,t3,.L68
+	# Cached 9-bit mask rejects same-face and noncanonical move suffixes.
+	addi a4,t0,-1
+	srl a4,s11,a4
+	andi a4,a4,1
+	bnez a4,.Lopt_reject
 .L17:
-# AI-assisted optimization: nine constant moves, fully unrolled.
-	addi t1,sp,24
-	sw s2,4(sp)
-	sw t4,8(sp)
+# AI-assisted optimization: nine constant moves, writing the next depth slot.
+# t5 = parent + 168; child = parent + 14. Parent remains unchanged.
+	addi t1,t5,-154
 	li a7,1
 	beq t0,a7,.Lopt_move1
 	li a7,2
@@ -239,437 +318,549 @@ solve.part.0:
 .Lopt_move1:
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,24(sp)
+	sb a4,0(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist0_0
 	addi a7,a7,-3
 .Lopt_twist0_0:
-	sb a7,31(sp)
+	sb a7,7(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,25(sp)
+	sb a4,1(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist0_1
 	addi a7,a7,-3
 .Lopt_twist0_1:
-	sb a7,32(sp)
+	sb a7,8(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,27(sp)
+	sb a4,3(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist0_3
 	addi a7,a7,-3
 .Lopt_twist0_3:
-	sb a7,34(sp)
+	sb a7,10(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,28(sp)
+	sb a4,4(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist0_4
 	addi a7,a7,-3
 .Lopt_twist0_4:
-	sb a7,35(sp)
+	sb a7,11(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move2:
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,27(sp)
-	sb a7,34(sp)
+	sb a4,3(t1)
+	sb a7,10(t1)
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,28(sp)
-	sb a7,35(sp)
+	sb a4,4(t1)
+	sb a7,11(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move3:
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,24(sp)
+	sb a4,0(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist2_0
 	addi a7,a7,-3
 .Lopt_twist2_0:
-	sb a7,31(sp)
+	sb a7,7(t1)
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,25(sp)
+	sb a4,1(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist2_1
 	addi a7,a7,-3
 .Lopt_twist2_1:
-	sb a7,32(sp)
+	sb a7,8(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,27(sp)
+	sb a4,3(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist2_3
 	addi a7,a7,-3
 .Lopt_twist2_3:
-	sb a7,34(sp)
+	sb a7,10(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,28(sp)
+	sb a4,4(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist2_4
 	addi a7,a7,-3
 .Lopt_twist2_4:
-	sb a7,35(sp)
+	sb a7,11(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move4:
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,27(sp)
+	sb a4,3(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist3_3
 	addi a7,a7,-3
 .Lopt_twist3_3:
-	sb a7,34(sp)
+	sb a7,10(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,28(sp)
+	sb a4,4(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist3_4
 	addi a7,a7,-3
 .Lopt_twist3_4:
-	sb a7,35(sp)
+	sb a7,11(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,29(sp)
+	sb a4,5(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist3_5
 	addi a7,a7,-3
 .Lopt_twist3_5:
-	sb a7,36(sp)
+	sb a7,12(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,30(sp)
+	sb a4,6(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist3_6
 	addi a7,a7,-3
 .Lopt_twist3_6:
-	sb a7,37(sp)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move5:
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,27(sp)
-	sb a7,34(sp)
+	sb a4,3(t1)
+	sb a7,10(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,28(sp)
-	sb a7,35(sp)
+	sb a4,4(t1)
+	sb a7,11(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move6:
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,27(sp)
+	sb a4,3(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist5_3
 	addi a7,a7,-3
 .Lopt_twist5_3:
-	sb a7,34(sp)
+	sb a7,10(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,28(sp)
+	sb a4,4(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist5_4
 	addi a7,a7,-3
 .Lopt_twist5_4:
-	sb a7,35(sp)
+	sb a7,11(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,29(sp)
+	sb a4,5(t1)
 	addi a7,a7,1
 	ble a7,t3,.Lopt_twist5_5
 	addi a7,a7,-3
 .Lopt_twist5_5:
-	sb a7,36(sp)
+	sb a7,12(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,30(sp)
+	sb a4,6(t1)
 	addi a7,a7,2
 	ble a7,t3,.Lopt_twist5_6
 	addi a7,a7,-3
 .Lopt_twist5_6:
-	sb a7,37(sp)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move7:
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,27(sp)
-	sb a7,34(sp)
+	sb a4,3(t1)
+	sb a7,10(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,28(sp)
-	sb a7,35(sp)
+	sb a4,4(t1)
+	sb a7,11(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move8:
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,27(sp)
-	sb a7,34(sp)
+	sb a4,3(t1)
+	sb a7,10(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,28(sp)
-	sb a7,35(sp)
+	sb a4,4(t1)
+	sb a7,11(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_move9:
 	lbu a4,-168(t5)
 	lbu a7,-161(t5)
-	sb a4,24(sp)
-	sb a7,31(sp)
+	sb a4,0(t1)
+	sb a7,7(t1)
 	lbu a4,-164(t5)
 	lbu a7,-157(t5)
-	sb a4,25(sp)
-	sb a7,32(sp)
+	sb a4,1(t1)
+	sb a7,8(t1)
 	lbu a4,-167(t5)
 	lbu a7,-160(t5)
-	sb a4,26(sp)
-	sb a7,33(sp)
+	sb a4,2(t1)
+	sb a7,9(t1)
 	lbu a4,-165(t5)
 	lbu a7,-158(t5)
-	sb a4,27(sp)
-	sb a7,34(sp)
+	sb a4,3(t1)
+	sb a7,10(t1)
 	lbu a4,-163(t5)
 	lbu a7,-156(t5)
-	sb a4,28(sp)
-	sb a7,35(sp)
+	sb a4,4(t1)
+	sb a7,11(t1)
 	lbu a4,-166(t5)
 	lbu a7,-159(t5)
-	sb a4,29(sp)
-	sb a7,36(sp)
+	sb a4,5(t1)
+	sb a7,12(t1)
 	lbu a4,-162(t5)
 	lbu a7,-155(t5)
-	sb a4,30(sp)
-	sb a7,37(sp)
+	sb a4,6(t1)
+	sb a7,13(t1)
 	j .Lopt_done
 .Lopt_done:
 # Horner permutation index: five multiply-by-seven/add stages.
-	lbu a4,24(sp)
+	lbu a4,0(t1)
 	slli a7,a4,3
 	sub a4,a7,a4
-	lbu a7,25(sp)
+	lbu a7,1(t1)
 	add a4,a4,a7
 	slli a7,a4,3
 	sub a4,a7,a4
-	lbu a7,26(sp)
+	lbu a7,2(t1)
 	add a4,a4,a7
 	slli a7,a4,3
 	sub a4,a7,a4
-	lbu a7,27(sp)
+	lbu a7,3(t1)
 	add a4,a4,a7
 	slli a7,a4,3
 	sub a4,a7,a4
-	lbu a7,28(sp)
+	lbu a7,4(t1)
 	add a4,a4,a7
 	slli a7,a4,3
 	sub a4,a7,a4
-	lbu a7,29(sp)
+	lbu a7,5(t1)
 	add a4,a4,a7
 	add a4,s5,a4
 	lbu a6,0(a4)
+	# Reject before reading orientation when permutation alone exceeds the bound.
+	add a7,a6,s10
+	bgt a7,s2,.Lopt_reject
 # Horner orientation index: five multiply-by-three/add stages.
-	lbu a4,31(sp)
+	lbu a4,7(t1)
 	slli a7,a4,1
 	add a4,a7,a4
-	lbu a7,32(sp)
+	lbu a7,8(t1)
 	add a4,a4,a7
 	slli a7,a4,1
 	add a4,a7,a4
-	lbu a7,33(sp)
+	lbu a7,9(t1)
 	add a4,a4,a7
 	slli a7,a4,1
 	add a4,a7,a4
-	lbu a7,34(sp)
+	lbu a7,10(t1)
 	add a4,a4,a7
 	slli a7,a4,1
 	add a4,a7,a4
-	lbu a7,35(sp)
+	lbu a7,11(t1)
 	add a4,a4,a7
 	slli a7,a4,1
 	add a4,a7,a4
-	lbu a7,36(sp)
+	lbu a7,12(t1)
 	add a4,a4,a7
 	add a4,s4,a4
 	lbu a4,0(a4)
-	lw	s2,4(sp)
-	lw	t4,8(sp)
 	bge	a6,a4,.L25
 	mv	a6,a4
 .L25:
-	add	a6,a6,s10
-	bge	s2,a6,.L69
-	addi	t2,t2,1
-	addi	t4,t4,1
-	addi	t0,t0,1
-	li	a4,10
-	andi	t2,t2,0xff
-	andi	t4,t4,0xff
-	addi	s1,s1,1
-	beq	t0,a4,.L70
-	andi	a4,t0,0xff
-	beq	a0,zero,.L51
-.L67:
-	addi	t1,a0,-1
-	slli	a6,t1,2
-	add	a6,s3,a6
-.L14:
-	andi	a7,s1,0xff
-	lw	a2,0(a6)
-	bgtu	a7,t3,.L16
-	addi	a2,a2,-1
-	andi	a2,a2,0xff
-	bleu	a2,t3,.L52
-	li	a2,0
-	j	.L17
+	add a6,a6,s10
+	bgt a6,s2,.Lopt_reject
+	# Only surviving candidates pay for inverse orientation scattering/indexing.
+.Lsearch_inverse_begin:
+	addi t2,sp,16
+	li t4,3
+	lbu a4,0(t1)
+	lbu a7,7(t1)
+	beqz a7,.Lsearch_inverse_begin_zero0
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero0:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,1(t1)
+	lbu a7,8(t1)
+	beqz a7,.Lsearch_inverse_begin_zero1
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero1:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,2(t1)
+	lbu a7,9(t1)
+	beqz a7,.Lsearch_inverse_begin_zero2
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero2:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,3(t1)
+	lbu a7,10(t1)
+	beqz a7,.Lsearch_inverse_begin_zero3
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero3:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,4(t1)
+	lbu a7,11(t1)
+	beqz a7,.Lsearch_inverse_begin_zero4
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero4:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,5(t1)
+	lbu a7,12(t1)
+	beqz a7,.Lsearch_inverse_begin_zero5
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero5:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a4,6(t1)
+	lbu a7,13(t1)
+	beqz a7,.Lsearch_inverse_begin_zero6
+	sub a7,t4,a7
+.Lsearch_inverse_begin_zero6:
+	add a4,t2,a4
+	sb a7,0(a4)
+	lbu a6,16(sp)
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,17(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,18(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,19(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,20(sp)
+	add a6,a6,a7
+	slli a7,a6,1
+	add a6,a7,a6
+	lbu a7,21(sp)
+	add a6,a6,a7
+	add a6,s4,a6
+	lbu a6,0(a6)
+.Lsearch_inverse_end:
+	add a6,a6,s10
+	bge s2,a6,.L69
+.Lopt_reject:
+	addi t0,t0,1
+	li a4,10
+	beq t0,a4,.L70
+	j .L51
 .L69:
-	lw	a2,12(sp)
-	add	a5,s3,a5
-	mv	a4,t6
-	addi	a2,a2,14
-	sw	t0,0(a5)
-	add	a2,s6,a2
-	addi	a6,t1,7
-.L26:
-	lbu	a0,0(t1)
-	lbu	a5,7(t1)
-	addi	t1,t1,1
-	sb	a0,-7(a2)
-	sb	a5,0(a2)
-	addi	a2,a2,1
-	bne	t1,a6,.L26
-	slli	a5,s10,2
-	add	a5,s3,a5
-	sw	zero,0(a5)
-	mv	a0,s10
-	j	.L6
+	add a5,s3,a5
+	sw t0,0(a5)
+	slli a5,s10,2
+	add a5,s3,a5
+	sw zero,0(a5)
+.Lsearch_mask_begin:
+	# a5=&moves[new_depth]; forbidden[new_depth] is at a5+264.
+	# Ancestor moves alone determine this mask, so cache it once per descent.
+	li a6,0
+	li a7,3
+	ble t0,a7,.Lsearch_mask_face
+	li a6,3
+	li a7,6
+	ble t0,a7,.Lsearch_mask_face
+	li a6,6
+.Lsearch_mask_face:
+	li a7,7
+	sll a7,a7,a6
+	li a4,2
+	blt s10,a4,.Lsearch_mask_store
+	beq s10,a4,.Lsearch_mask_two
+	li a4,3
+	beq s10,a4,.Lsearch_mask_three
+	mv a2,s8
+	lw t2,-16(a5)
+	addi t2,t2,-1
+	slli t4,t2,3
+	add t2,t4,t2
+	lw a4,-12(a5)
+	add t2,t2,a4
+	addi t2,t2,-1
+	j .Lsearch_mask_last_two
+.Lsearch_mask_three:
+	addi a2,s7,81
+	lw t2,-12(a5)
+	addi t2,t2,-1
+.Lsearch_mask_last_two:
+	slli t4,t2,3
+	add t2,t4,t2
+	lw a4,-8(a5)
+	add t2,t2,a4
+	addi t2,t2,-1
+	j .Lsearch_mask_last
+.Lsearch_mask_two:
+	mv a2,s7
+	lw t2,-8(a5)
+	addi t2,t2,-1
+.Lsearch_mask_last:
+	slli t4,t2,3
+	add t2,t4,t2
+	lw a4,-4(a5)
+	add t2,t2,a4
+	addi t2,t2,-1
+	add t2,a2,t2
+	lbu t2,0(t2)
+	li a4,1
+	sll a4,a4,a6
+	addi a4,a4,-1
+	and t4,t2,a4
+	xori a4,a4,-1
+	and t2,t2,a4
+	slli t2,t2,3
+	or t2,t2,t4
+	or a7,a7,t2
+.Lsearch_mask_store:
+	sw a7,264(a5)
+.Lsearch_mask_end:
+	mv a4,t6
+	mv a0,s10
+	j .L6
 .L65:
 	mv	a0,a4
 .L12:
@@ -680,40 +871,6 @@ solve.part.0:
 	mv	a6,a3
 	bne	s2,a5,.L3
 	j	.L60
-.L68:
-	li	a7,5
-	mv	a4,t2
-	li	a2,21
-	bleu	a6,a7,.L17
-.L33:
-	mv	a4,t4
-	li	a2,42
-	j	.L17
-.L16:
-	li	a4,5
-	bgtu	a7,a4,.L71
-	addi	a2,a2,-4
-	andi	a2,a2,0xff
-	bleu	a2,t3,.L52
-	mv	a4,t2
-	li	a2,21
-	j	.L17
-.L71:
-	addi	a4,a2,-1
-	andi	a4,a4,0xff
-	li	a2,5
-	bleu	a4,a2,.L33
-.L52:
-	addi	t0,t0,1
-	li	a4,10
-	beq	t0,a4,.L56
-	addi	t2,t2,1
-	addi	t4,t4,1
-	andi	t2,t2,0xff
-	andi	t4,t4,0xff
-	addi	s1,s1,1
-	andi	a4,t0,0xff
-	j	.L14
 .L66:
 	addi	t1,a0,-1
 	mv	a0,t1
@@ -728,10 +885,6 @@ solve.part.0:
 	sw	a5,0(t6)
 	mv	a0,t1
 	j	.L12
-.L56:
-	mv	a4,t6
-	mv	t6,a5
-	j	.L28
 .L49:
 	li	a0,-1
 	j	.L1
@@ -18262,5 +18415,6 @@ cube_input:
 	.size	solver7_status, 4
 solver7_status:
 	.zero	4
+	.include "solver7_search_sequences.inc"
 	.ident	"GCC: (GNU) 16.2.0"
 	.section	.note.GNU-stack,"",@progbits

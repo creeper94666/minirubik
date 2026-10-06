@@ -37,9 +37,12 @@ def run(p, o, move):
             a, b = r[args[0]], r[args[1]]
             if (a == b if op == 'beq' else a <= b): pc = labels[args[2]]
         else: raise AssertionError(op)
-    assert r['t1'] == 1024 and mem[1004] == 123 and mem[1008] == 456
+    assert r['t1'] == 2014, 'candidate must occupy the adjacent child slot'
+    assert r['s2'] == 123 and r['t4'] == 456
+    assert [mem[2000+i] for i in range(14)] == p + o, 'parent state changed'
+    assert set(mem) == set(range(2000, 2028)), 'unexpected spill traffic'
     assert r['t0'] == move and r['t5'] == 2168 and r['t3'] == 2
-    return [mem[1024+i] for i in range(14)]
+    return [mem[2014+i] for i in range(14)]
 n = 0
 for m in range(9):
     f, t = divmod(m, 3)

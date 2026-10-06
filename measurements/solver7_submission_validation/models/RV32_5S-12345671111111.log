@@ -1,0 +1,8 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '${PROJECT_ROOT}/measurements/solver7_submission_validation/models/RV32_5S-12345671111111.elf'
+=============================== Running model ===============================
+
+
+Program exited with code: 0
+================================== Post-run ==================================

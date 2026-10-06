@@ -1,0 +1,9 @@
+===== cycles
+15464846
+===== instructions retired
+15464846
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_ISS
+source file: measurements/solver7_submission_validation/led_ram.elf
+

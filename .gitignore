@@ -3,3 +3,12 @@
 *.swp
 solver
 mini
+
+# Rebuildable artifacts
+__pycache__/
+*.pyc
+*.elf
+*.dis
+*.map
+
+/solver7_search.s

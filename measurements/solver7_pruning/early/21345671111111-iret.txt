@@ -1,0 +1,9 @@
+===== cycles
+30872719
+===== instructions retired
+30872719
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_ISS
+source file: ${PROJECT_ROOT}/measurements/solver7_pruning/early/21345671111111.elf
+

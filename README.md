@@ -1,3 +1,7 @@
+> **RV32I coursework:** [current source, validation and remaining requirements](docs/submission-status.md).
+> [Build the shared GUI/CLI assembly](solver7_optimization_led_README.md).
+> The development code and records include disclosed AI assistance.
+
 # minirubik
 
 An optimal C99 solver for the 2×2×2 Rubik’s Cube. It builds a breadth-first

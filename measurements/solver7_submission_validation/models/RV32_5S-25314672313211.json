@@ -1,0 +1,33 @@
+{
+  "processor": "RV32_5S",
+  "input": "25314672313211",
+  "distance": 1,
+  "path": [
+    "R'"
+  ],
+  "replay": "PASS",
+  "retired_instructions": 1235,
+  "wall_seconds": 0.49791729100979865,
+  "command": [
+    "/Applications/Ripes.app/Contents/MacOS/Ripes",
+    "--mode",
+    "cli",
+    "--src",
+    "${PROJECT_ROOT}/measurements/solver7_submission_validation/models/RV32_5S-25314672313211.elf",
+    "-t",
+    "elf",
+    "--proc",
+    "RV32_5S",
+    "--iret",
+    "--cycles",
+    "--runinfo",
+    "--timeout",
+    "0",
+    "-v",
+    "--output",
+    "${PROJECT_ROOT}/measurements/solver7_submission_validation/models/RV32_5S-25314672313211.txt"
+  ],
+  "elf_sha256": "effa00da0955ca7dba236e16c981743fb838df968a1ce492ca01885c2a290a40",
+  "source_sha256": "9b7bc5cd321928ef1324c59b65eaf2547f07eae7c561c70a04e5bd3544ef7ce0",
+  "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}

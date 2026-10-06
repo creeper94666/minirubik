@@ -1,0 +1,12 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '${PROJECT_ROOT}/measurements/solver7_search/target/21345671111111.elf'
+=============================== Running model ===============================
+INFO: 00:00:01	cycles: 7115297	retired: 7115298
+INFO: 00:00:02	cycles: 14311947	retired: 14311948
+INFO: 00:00:03	cycles: 21375386	retired: 21375387
+INFO: 00:00:04	cycles: 26847592	retired: 26847592
+R B' D2 R' B R' B' R D2 R B
+
+Program exited with code: 0
+================================== Post-run ==================================

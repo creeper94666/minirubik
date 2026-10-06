@@ -1,0 +1,31 @@
+{
+  "H3": "PASS",
+  "independent_replay": "PASS",
+  "states": 3674160,
+  "coverage": "every rank exactly once",
+  "histogram": [
+    1,
+    9,
+    54,
+    321,
+    1847,
+    9992,
+    50136,
+    227536,
+    870072,
+    1887748,
+    623800,
+    2644
+  ],
+  "workers": 4,
+  "batch_started_utc": "2026-10-06T08:20:12Z",
+  "batch_wall_seconds": 415.3057900839485,
+  "sum_shard_wall_seconds": 1617.913678994,
+  "fingerprint": {
+    "binary": "27adf51de78cd6071887bd971295e4c989f6c7813375cf80f4033816a59f514d",
+    "oracle": "fc964cfb25a341e2208f65b0a97194c0894b248d538afb82d0baaf73843c3413"
+  },
+  "provenance": "AI-executed validation of pinned solver7_search.c; not an exhaustive proof for compiled assembly",
+  "source_sha256": "23df991e6ac85882a45aa27588f504dd49b573658a35b84d264b43d130725998",
+  "metadata_note": "Source label corrected from the reused generic runner fixed solver7.c label; all numerical results and test records are unchanged."
+}

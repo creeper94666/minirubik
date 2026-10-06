@@ -1,34 +1,61 @@
-# Optimized solver7 plus compiled C LED replay
+# Shared solver and LED assembly source
 
-Deliverable: solver7_optimization_led.s (self-contained assembly with tables and renderer), solver7_optimization_led.elf. Original solver7_optimization.s is unchanged.
+`solver7_optimization_led.s` combines the current optimized solver with the
+C-compiled renderer. This is AI-assisted development code, not independently
+student-written assembly. `RENDER` is an assembler-time switch, defaulting to 0.
 
-The builder preserves the optimized search and hooks the successful solver7_run return block, after the original solution replay verification and printed solution. ABI inputs to led_replay: a0=start state at sp+20, a1=solution at sp+68, a2=length from t0. t4 is saved/restored for finite tests. Stack alignment and the original return address are preserved. The C replay and cube_led units are compiled to RV32I with unique local label prefixes and appended. No hand-specialized search code is replaced with compiler output.
-
-Configuration: LED Matrix 0 at 0xf0000000, 35x25, delay 10000 loop iterations per frame. Search runs once. The initial cube and the computed eleven solution moves replay forever. This is automatic looping; D-Pad previous/next control is not included because no D-Pad base has been provided.
-
-Rebuild:
+## Measurement build
 
 ```sh
-python3 tools/build_solver7_optimization_led.py
+sh build_solver7_optimization.sh
+python3 tools/build_solver7_optimization_led.py --render 0
+python3 tests/solver7_renderer_switch_test.py
 ```
 
-Override options: --base 0xf0000000 --delay 10000 --cycles 0. Zero cycles means infinite replay; positive cycles are for finite verification. This default base matches the user's confirmed Ripes device exports, not a universal Ripes address.
+The generated source embeds the sequence table, so it does not depend on an
+external assembly include. With `RENDER=0`, the renderer and its hook/data are
+absent. All allocated file bytes equal `solver7_optimization.elf`, as checked by
+`objcopy -O binary`. The solver is therefore exactly the measured implementation.
+Static data is 126,079 bytes and linked `.text` is 4,296 bytes.
 
-Load solver7_optimization_led.elf through Ripes File > Load Program > Executable (ELF). Keep the 35x25 LED Matrix at the configured address. Loading restarts the program and therefore requires one initial search. Existing running GUI program is not replaced automatically by this build.
+## GUI build
 
-.text 4904 bytes. Static data: .rodata 118828 + .data 15 + .bss 888 = 119731 bytes; 11341 bytes remain under 128 KiB. RV32I-only and no unresolved external symbols verified.
-
-Validation:
-
-- Sanitized host test tests/solver7_optimization_led_test.c: 24 frames (two full loops) and every RGB word match the original apply_move reference, including initial and solved states.
-- Actual Ripes RV32_ISS integration test: compiled with RAM output base 0x40000, delay 0, two replay cycles; printed the same 11-move solution and exited with code 0. 35,251,419 retired instructions, including both replay rounds and all setup. This is not a solver-only benchmark or live MMIO display verification.
-- Live GUI playback of this new combined binary has not been verified. Prior C-only LED binary was displayed successfully.
+Create LED Matrix 0 in Ripes with Width=35 and Height=25. Copy its exported
+`LED_MATRIX_0_BASE` value; do not assume the address from another setup.
 
 ```sh
-cc -O2 -fno-builtin -Wno-unused-function -fsanitize=undefined,address tests/solver7_optimization_led_test.c cube_led.c -o /tmp/solver7_optimization_led_test
-/tmp/solver7_optimization_led_test
-python3 tools/build_solver7_optimization_led.py --base 0x40000 --delay 0 --cycles 2 --output measurements/solver7_optimization_led/test_two_rounds
-/Applications/Ripes.app/Contents/MacOS/Ripes --mode cli --src measurements/solver7_optimization_led/test_two_rounds.elf -t elf --proc RV32_ISS --iret --cycles --runinfo --timeout 0 -v --output measurements/solver7_optimization_led/test-iret.txt > measurements/solver7_optimization_led/test.log 2>&1
+python3 tools/build_solver7_optimization_led.py --render 1 --base YOUR_EXPORTED_BASE --output solver7_gui
 ```
 
-AI-assisted experimental assembly combination; source C is solver7_led_replay.c and cube_led.c. The final assembly contains everything needed to assemble/link with solver7.ld.
+Load `solver7_gui.elf` with File > Load Program > Executable (ELF). The builder
+passes `RENDER`, `LED_MATRIX_0_BASE`, `LED_MATRIX_0_WIDTH`, and
+`LED_MATRIX_0_HEIGHT` as assembler symbols. The base is an absolute symbolic
+relocation in the renderer; width and height are assembly-time checked against
+the renderer's 35-column row stride and 25-row buffer. Invalid geometry fails
+assembly. The source contains no assumed peripheral address.
+
+The shared source is identical for GUI and CLI; only the renderer switch and
+its peripheral symbols differ. Default frame delay remains 10,000 iterations;
+default replay remains infinite. Search runs once, then actual returned moves
+are replayed from the input state. Each move redraws all facelets.
+
+## Verification
+
+```sh
+cc -O2 -fno-builtin -Wno-unused-function -fsanitize=undefined,address tests/solver7_optimization_led_test.c cube_led.c -o /tmp/replay-test
+/tmp/replay-test
+python3 tools/build_solver7_optimization_led.py --render 1 --base 0x40000 --delay 0 --cycles 2 --output measurements/solver7_submission_validation/led_ram
+python3 tools/validate_submission_models.py
+```
+
+The host test compares 24 frames and all RGB words against independently applied
+moves. The finite target RAM test exits successfully after two replay rounds,
+using 15,464,846 retired instructions on RV32_ISS. Its static data is 127,099
+bytes and linked `.text` is 5,456 bytes. RAM at 0x40000 is a test destination,
+not the GUI peripheral address. This count includes rendering and is not the
+renderer-disabled performance result.
+
+Raw ISS and RV32_5S model checks are in
+`measurements/solver7_submission_validation/models/`. A successful CLI pipeline
+run does not replace a personal GUI demonstration or signal walkthrough.
+Live MMIO animation of this new combined version has not yet been observed.

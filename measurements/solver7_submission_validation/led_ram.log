@@ -1,0 +1,11 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file 'measurements/solver7_submission_validation/led_ram.elf'
+=============================== Running model ===============================
+INFO: 00:00:00	cycles: 4959869	retired: 4959870
+INFO: 00:00:01	cycles: 7960179	retired: 7960180
+INFO: 00:00:02	cycles: 12684774	retired: 12684774
+R B' D2 R' B R' B' R D2 R B
+
+Program exited with code: 0
+================================== Post-run ==================================

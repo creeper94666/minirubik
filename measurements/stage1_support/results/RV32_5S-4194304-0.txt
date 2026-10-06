@@ -1,0 +1,9 @@
+===== cycles
+9437193
+===== instructions retired
+5242887
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_5S
+source file: ${PROJECT_ROOT}/measurements/stage1_support/results/loop-4194304.elf
+

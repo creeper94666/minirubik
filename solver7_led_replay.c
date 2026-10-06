@@ -1,8 +1,13 @@
 /* LED replay linked to the original optimized search assembly.
  * Called only after the optimized solver validates its computed solution. */
 #include "cube_led.h"
+#ifdef LED_SYMBOLIC_BASE
+/* Absolute assembler symbol supplied by the peripheral configuration. */
+extern unsigned char LED_MATRIX_0_BASE[];
+#else
 #ifndef LED_MATRIX_0_BASE
 #error "Supply LED_MATRIX_0_BASE at build time"
+#endif
 #endif
 #ifndef LED_FRAME_DELAY
 #define LED_FRAME_DELAY 10000u

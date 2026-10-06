@@ -1,0 +1,59 @@
+{
+  "input": "21345671111111",
+  "expected": {
+    "distance": 11,
+    "baseline_instructions": 34934509,
+    "baseline_path": [
+      "R",
+      "B'",
+      "D2",
+      "R'",
+      "B",
+      "R'",
+      "B'",
+      "R",
+      "D2",
+      "R",
+      "B"
+    ]
+  },
+  "path": [
+    "R",
+    "B'",
+    "D2",
+    "R'",
+    "B",
+    "R'",
+    "B'",
+    "R",
+    "D2",
+    "R",
+    "B"
+  ],
+  "instructions": 31343837,
+  "replay": "PASS",
+  "command": [
+    "/Applications/Ripes.app/Contents/MacOS/Ripes",
+    "--mode",
+    "cli",
+    "--src",
+    "${PROJECT_ROOT}/measurements/solver7_search/target/21345671111111.elf",
+    "-t",
+    "elf",
+    "--proc",
+    "RV32_ISS",
+    "--iret",
+    "--cycles",
+    "--runinfo",
+    "--timeout",
+    "0",
+    "-v",
+    "--output",
+    "${PROJECT_ROOT}/measurements/solver7_search/target/21345671111111-iret.txt"
+  ],
+  "fingerprint": {
+    "elf": "ccdee1bf187e8808171d41987d528b58ea58b694c715586ba665d0611a5524ef",
+    "source": "23df991e6ac85882a45aa27588f504dd49b573658a35b84d264b43d130725998",
+    "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+  }
+}

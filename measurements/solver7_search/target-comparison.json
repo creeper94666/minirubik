@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "input": "21345671111111",
+      "original_c_instructions": 53779947,
+      "new_c_instructions": 31343837,
+      "reduction_percent": 41.718356472162384,
+      "retained_optimized_assembly_instructions": 25813248,
+      "all_paths_identical": true
+    },
+    {
+      "input": "54721631111111",
+      "original_c_instructions": 147099504,
+      "new_c_instructions": 79635246,
+      "reduction_percent": 45.86300848437939,
+      "retained_optimized_assembly_instructions": 70613418,
+      "all_paths_identical": true
+    }
+  ],
+  "baseline_elf_sha256": "11d38ea935f8a5462b62dcf2a49f32acb62d912e1927420e7e4f7b878c21955c",
+  "new_elf_sha256": "ccdee1bf187e8808171d41987d528b58ea58b694c715586ba665d0611a5524ef",
+  "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}

@@ -1,0 +1,8 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '${PROJECT_ROOT}/measurements/stage1_support/results/loop-4096.elf'
+=============================== Running model ===============================
+INFO: 00:00:00	cycles: 4991962	retired: 4991963
+
+Program exited with code: 0
+================================== Post-run ==================================
