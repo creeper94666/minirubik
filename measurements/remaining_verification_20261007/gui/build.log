@@ -1,0 +1,13 @@
+measurements/remaining_verification_20261007/gui/solver7_gui.elf  :
+section               size     addr
+.text                 5416        0
+.rodata             126196    65536
+.data                   15   191732
+.bss                   888   191748
+.stack                4100   192636
+.comment                18        0
+.riscv.attributes       28        0
+Total               136661
+
+
+PASS: single assembly file, RV32I-only, no unresolved symbols; linker checks 128 KiB static data limit.

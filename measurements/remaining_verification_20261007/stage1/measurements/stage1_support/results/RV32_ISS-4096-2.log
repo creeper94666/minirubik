@@ -1,0 +1,7 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '<PROJECT>/measurements/remaining_verification_20261007/stage1/measurements/stage1_support/results/loop-4096.elf'
+=============================== Running model ===============================
+
+Program exited with code: 0
+================================== Post-run ==================================

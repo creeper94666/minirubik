@@ -1,0 +1,6 @@
+AI-executed. Runner and memory_loop.s copied byte-for-byte into an isolated mirror so old records are preserved.
+python3 measurements/remaining_verification_20261007/stage1/tools/measure_stage1.py --repetitions 3 > measurements/remaining_verification_20261007/stage1/run.log 2>&1
+First sandbox attempt failed at Ripes startup; rerun with approved process permissions.
+Individual compile configuration is in tools/measure_stage1.py; exact Ripes commands and timings are in measurements/stage1_support/results/records.json.
+cc -O2 measurements/remaining_verification_20261007/stage1/baseline_sizes.c -o measurements/remaining_verification_20261007/stage1/baseline_sizes
+measurements/remaining_verification_20261007/stage1/baseline_sizes

@@ -88,7 +88,7 @@ RV32_ISS build. Static data means `.rodata + .data + .bss`; code size means link
 
 | Metric | Required limit | Current optimized assembly |
 | --- | ---: | ---: |
-| Worst case over all 2,644 distance-11 inputs | ≤ 50,000,000 retired instructions | **38,543,830 — PASS; 0 inputs above the limit |
+| Worst case over all 2,644 distance-11 inputs | ≤ 50,000,000 retired instructions | **38,543,830 — PASS**; 0 inputs above the limit |
 | Worst-case input | — | `54721631111111` |
 | Specified input `21345671111111` | Report separately | **15,147,934** retired instructions |
 | `.rodata` | — | 126,060 bytes |
@@ -113,6 +113,8 @@ Evidence: [full sweep summary](measurements/solver7_submission_validation/ripes/
 [C comparison](solver7_search_README.md),
 [compiler / Ripes build](measurements/solver7_submission_validation/environment.json),
 [source / binary fingerprints](measurements/solver7_submission_validation/fingerprints.json).
+
+New 2026-10-07 evidence: [12 Stage 1 samples, methods and limitations](docs/remaining-verification-results.md), [current report corrections and upstream section-7 critique](docs/report-final-review.md). Final LED replay and pipeline signal observations remain unconfirmed; see the [authorized GUI attempt](measurements/gui_followup_20261007/gui/attempt-log.md).
 
 Other required measurements: [Stage 1 memory/rate reproduction aid and qualified pilot results](measurements/stage1_support/README.md)
 and [step-by-step assembly optimization measurements](measurements/solver7_pruning/README.md).

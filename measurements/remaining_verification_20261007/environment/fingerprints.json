@@ -1,0 +1,15 @@
+{
+  "solver.c": "562764bae4a5ca52a57ea82ac7a8490b09f92805ae3fd5bde1a4e67af82fbdfc",
+  "solver7_optimization.s": "c39d95a777044120b66320dd85668ea4dd3aeba52f83879b7554f73b05ccfef6",
+  "solver7_optimization.elf": "e0e34f1535ce81b015331c3c798fca0348f16c93dbe94ee5b725858329f1c120",
+  "solver7_optimization_led.s": "9b7bc5cd321928ef1324c59b65eaf2547f07eae7c561c70a04e5bd3544ef7ce0",
+  "solver7_optimization_led.elf": "9cf031504897e541e37f875217c3d3ac00406cdd3f70745b76e86a76bfec1edd",
+  "solver7_search.c": "23df991e6ac85882a45aa27588f504dd49b573658a35b84d264b43d130725998",
+  "solver7_search_sequences.h": "bc0f3ffa364fba30780d8623798ad6623075c7f6ee1e94375d3cee7f2c67617f",
+  "solver7.ld": "cf66e634254d2db435cdd31aeacfcb0359bcfe242e9a2a4b3a2cad191cd28124",
+  "tools/measure_stage1.py": "dad89d01c614399c10273618f193b7e3241cb069c00eada28c609eea3b852a15",
+  "measurements/stage1_support/memory_loop.s": "59cce9def73b9bb733029d121f37e08e8df099a64442f4e6be4330100c7f11c4",
+  "measurements/remaining_verification_20261007/gui/solver7_gui.s": "9b7bc5cd321928ef1324c59b65eaf2547f07eae7c561c70a04e5bd3544ef7ce0",
+  "measurements/remaining_verification_20261007/gui/solver7_gui.elf": "8655b79a8658ca9447155a10d39273a5534384bf1fee103e1130fdaa26c8353f",
+  "/Applications/Ripes.app/Contents/MacOS/Ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}

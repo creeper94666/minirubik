@@ -1,0 +1,87 @@
+
+Merging object attributes
+
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                        . = 0x0
+
+.text           0x00000000     0x1528
+ *(.text.start)
+ .text.start    0x00000000       0x3c /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+                0x00000000                _start
+ *(.text .text.*)
+ .text          0x0000003c     0x14ec /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+                0x00000c58                memset
+                0x00000c74                solve
+                0x00000cac                solver7_run
+                0x000010b8                solver7_main
+                0x0000115c                led_replay
+                0x000012f4                cube_to_facelets
+                0x000013c8                cube_led_byte_offset
+                0x00001420                cube_to_pixels
+                0x000014f4                cube_led_write
+                0x00010000                        . = 0x10000
+
+.rodata         0x00010000    0x1ecf4
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x00010000       0x8f /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+ *fill*         0x0001008f        0x1 
+ .rodata        0x00010090    0x1ec64 /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+                0x0002eccc                cube_led_origins
+                0x0002ecd8                cube_led_palette
+
+.rela.dyn       0x0002ecf4        0x0
+ .rela.text.start
+                0x0002ecf4        0x0 /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+
+.data           0x0002ecf4        0xf
+ *(.data .data.* .sdata .sdata.*)
+ .data          0x0002ecf4        0xf /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+                0x0002ecf4                cube_input
+
+.bss            0x0002ed04      0x378
+                0x0002ed04                        . = ALIGN (0x4)
+                0x0002ed04                        __bss_start = .
+ *(.bss .bss.* .sbss .sbss.*)
+ .bss           0x0002ed04      0x378 /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+                0x0002ed04                solver7_status
+                0x0002f074                led_replay_round
+                0x0002f078                led_replay_step
+ *(COMMON)
+                0x0002f07c                        . = ALIGN (0x4)
+                0x0002f07c                        __bss_end = .
+
+.stack          0x0002f07c     0x1004
+                0x0002f080                        . = ALIGN (0x10)
+ *fill*         0x0002f07c        0x4 
+                0x0002f080                        __stack_bottom = .
+                0x00030080                        . = (. + 0x1000)
+ *fill*         0x0002f080     0x1000 
+                0x00030080                        __stack_top = .
+                0x00000001                        ASSERT ((((SIZEOF (.rodata) + SIZEOF (.data)) + SIZEOF (.bss)) <= 0x20000), Static data exceeds assignment budget)
+                0x00000001                        ASSERT (((ADDR (.text) + SIZEOF (.text)) <= 0x10000), Text overlaps data)
+LOAD /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+OUTPUT(measurements/remaining_verification_20261007/gui/solver7_gui.elf elf32-littleriscv)
+
+.comment        0x00000000       0x12
+ .comment       0x00000000       0x12 /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+                                 0x37 (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1c /var/folders/_f/wnfqlfns021f1qdgb708_n080000gn/T//ccGonfrt.o

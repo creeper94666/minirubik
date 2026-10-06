@@ -1,0 +1,164 @@
+Window: "Ripes", App: Ripes.
+0 標準視窗 Ripes, Secondary Actions: Raise
+	1 分割群組 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter
+		2 container QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget
+			3 文字 Value: A double-buffered raster screen. Each pixel is a 24-bit RGB value (0xRRGGBB, blue in the least significant byte).
+
+The framebuffer (the back buffer) starts at the peripheral base address. The byte offset of pixel (x, y) is:
+    offset = (y*WIDTH + x) * 4
+
+Writing pixels does not update the display. Write any value to the PRESENT register to scan the back buffer onto the screen and flip to the other buffer for the next frame., ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.description
+			4 container Parameters, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox
+				5 表格 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+					6 row QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+						7 輸入格 Width, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+						8 輸入格 64, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+					9 row QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+						10 輸入格 Height, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+						11 輸入格 48, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+					12 直欄 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+					13 直欄 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.parameterGroupBox.parameterView
+			14 container Register map, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox
+				15 表格 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+					16 row QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+						17 輸入格 PRESENT, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+						18 輸入格 0x3000, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+						19 輸入格 W, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+						20 輸入格 32, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+					21 直欄 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+					22 直欄 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+					23 直欄 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+					24 直欄 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox.registerMapView
+			25 container Exports, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox_3
+				26 文字項目區域 Exports, Secondary Actions: Raise, Value: #define SCREEN_0_BASE (0xf0001b74)
+#define SCREEN_0_SIZE (0x3004)
+#define SCREEN_0_PRESENT_OFFSET (0x3000)
+#define SCREEN_0_PRESENT (0xf0004b74)
+#define SCREEN_0_WIDTH (0x40)
+#define SCREEN_0_HEIGHT (0x30), ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_stackedwidget.Ripes__IOPeripheralTab.groupBox_3.exports
+		27 標籤頁群組 Screen 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+			28 標籤頁 LED Matrix 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+			29 標籤頁 D-Pad 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+			30 標籤頁 Switches 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+			31 標籤頁 LED Matrix 1, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+			32 標籤頁 RTC 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+			33 標籤頁 Screen 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.peripheralsTab.qt_tabwidget_tabbar
+		34 container QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea
+			35 按鈕 Float, Description: Undocks and re-attaches the dock widget, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.qt_dockwidget_floatbutton
+			36 按鈕 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IODPad.QToolButton
+			37 按鈕 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IODPad.QToolButton
+			38 按鈕 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IODPad.QToolButton
+			39 按鈕 QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IODPad.QToolButton
+			40 按鈕 Float, Description: Undocks and re-attaches the dock widget, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.qt_dockwidget_floatbutton
+			41 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			42 文字 Value: 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			43 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			44 文字 Value: 1, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			45 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			46 文字 Value: 2, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			47 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			48 文字 Value: 3, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			49 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			50 文字 Value: 4, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			51 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			52 文字 Value: 5, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			53 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			54 文字 Value: 6, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			55 註記框 Value: 0, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.Ripes::ToggleButton
+			56 文字 Value: 7, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOSwitches.QLabel
+			57 按鈕 Float, Description: Undocks and re-attaches the dock widget, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.qt_dockwidget_floatbutton
+			58 按鈕 Float, Description: Undocks and re-attaches the dock widget, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.qt_dockwidget_floatbutton
+			59 text Value: Epoch: 1791303550803759000 ns 2026-10-07 00:19:10.803, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOClock.QLabel
+			60 按鈕 Float, Description: Undocks and re-attaches the dock widget, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.qt_dockwidget_floatbutton
+			61 按鈕 Float, Description: Undocks and re-attaches the dock widget, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.qt_dockwidget_floatbutton
+		62 container Devices, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.verticalLayoutWidget.groupBox_2
+		63 container I/O exports, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.verticalLayoutWidget.groupBox
+			64 文字項目區域 I/O exports, Secondary Actions: Raise, Description: Exported symbols for all I/O devices.
+These symbols may be referenced in Assembly
+or C-language programs., Value: #ifndef RIPES_IO_HEADER
+#define RIPES_IO_HEADER
+// *****************************************************************************
+// * SWITCHES_0
+// *****************************************************************************
+#define SWITCHES_0_BASE	(0xf0000dbc)
+#define SWITCHES_0_SIZE	(0x4)
+#define SWITCHES_0_N	(0x8)
+
+
+// *****************************************************************************
+// * SCREEN_0
+// *****************************************************************************
+#define SCREEN_0_BASE	(0xf0001b74)
+#define SCREEN_0_SIZE	(0x3004)
+#define SCREEN_0_PRESENT_OFFSET	(0x3000)
+#define SCREEN_0_PRESENT	(0xf0004b74)
+#define SCREEN_0_WIDTH	(0x40)
+#define SCREEN_0_HEIGHT	(0x30)
+
+
+// *****************************************************************************
+// * LED_MATRIX_0
+// *****************************************************************************
+#define LED_MATRIX_0_BASE	(0xf0000000)
+#define LED_MATRIX_0_SIZE	(0xdac)
+#define LED_MATRIX_0_WIDTH	(0x23)
+#define LED_MATRIX_0_HEIGHT	(0x19)
+
+
+// *****************************************************************************
+// * LED_MATRIX_1
+// *****************************************************************************
+#define LED_MATRIX_1_BASE	(0xf0000dc0)
+#define LED_MATRIX_1_SIZE	(0xdac)
+#define LED_MATRIX_1_WIDTH	(0x23)
+#define LED_MATRIX_1_HEIGHT	(0x19)
+
+
+// *****************************************************************************
+// * RTC_0
+// *****************************************************************************
+#define RTC_0_BASE	(0xf0001b6c)
+#define RTC_0_SIZE	(0x8)
+#define RTC_0_TIME_LO_OFFSET	(0x0)
+#define RTC_0_TIME_LO	(0xf0001b6c)
+#define RTC_0_TIME_HI_OFFSET	(0x4)
+#define RTC_0_TIME_HI	(0xf0001b70)
+
+
+// *****************************************************************************
+// * D_PAD_0
+// *****************************************************************************
+#define D_PAD_0_BASE	(0xf0000dac)
+#define D_PAD_0_SIZE	(0x10)
+#define D_PAD_0_UP_OFFSET	(0x0)
+#define D_PAD_0_UP	(0xf0000dac)
+#define D_PAD_0_DOWN_OFFSET	(0x4)
+#define D_PAD_0_DOWN	(0xf0000db0)
+#define D_PAD_0_LEFT_OFFSET	(0x8)
+#define D_PAD_0_LEFT	(0xf0000db4)
+#define D_PAD_0_RIGHT_OFFSET	(0xc)
+#define D_PAD_0_RIGHT	(0xf0000db8)
+
+
+#endif // RIPES_IO_HEADER, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.verticalLayoutWidget.groupBox.ioSymbols
+				65 捲軸 (settable) Value: 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.verticalLayoutWidget.groupBox.ioSymbols.qt_scrollarea_hcontainer.QScrollBar
+				66 捲軸 (settable) Value: 0, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.verticalLayoutWidget.groupBox.ioSymbols.qt_scrollarea_vcontainer.QScrollBar
+	67 按鈕 (disabled) Select processor, ID: QApplication.Ripes__MainWindow.QToolBar.QToolButton
+	68 按鈕 (disabled) Reset (F3), Description: Reset the simulator (F3), ID: QApplication.Ripes__MainWindow.QToolBar.QToolButton
+	69 按鈕 (disabled) Reverse (F4), Description: Undo a clock cycle (F4), ID: QApplication.Ripes__MainWindow.QToolBar.QToolButton
+	70 按鈕 (disabled) Clock (F5), Description: Clock the circuit (F5), ID: QApplication.Ripes__MainWindow.QToolBar.QToolButton
+	71 註記框 Auto clock (F6), Description: Clock the circuit with the selected frequency (F6), Value: 1, ID: QApplication.Ripes__MainWindow.QToolBar.QToolButton
+	72 步進器 (settable) Description: Auto clock interval, Value: 100, ID: QApplication.Ripes__MainWindow.QToolBar.QSpinBox, Secondary Actions: Raise
+	73 註記框 (disabled) Run (F8), Value: 0, ID: QApplication.Ripes__MainWindow.QToolBar.QToolButton, Description: Execute simulator without updating UI (fast execution) (F8).
+ Running will stop once the program exits or a breakpoint is hit.
+	74 文字 QApplication.Ripes__MainWindow.QStatusBar
+		75 text Value: Processor: 5-stage processor    ISA: RV32I, ID: QApplication.Ripes__MainWindow.QStatusBar.QLabel
+	76 文字 Ripes
+77 menu bar
+	78 Ripes
+	79 File
+	80 Edit
+	81 View
+	82 Help
+
+The focused UI element is 0 標準視窗 Ripes, Secondary Actions: Raise

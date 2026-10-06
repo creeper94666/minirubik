@@ -1,0 +1,64 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '<PROJECT>/measurements/remaining_verification_20261007/stage1/measurements/stage1_support/results/loop-4096.elf'
+=============================== Running model ===============================
+INFO: 00:00:01	cycles: 194744	retired: 108224
+INFO: 00:00:02	cycles: 425863	retired: 236662
+INFO: 00:00:03	cycles: 699681	retired: 388828
+INFO: 00:00:04	cycles: 919779	retired: 511142
+INFO: 00:00:05	cycles: 1190859	retired: 661789
+INFO: 00:00:06	cycles: 1455631	retired: 808928
+INFO: 00:00:07	cycles: 1720867	retired: 956327
+INFO: 00:00:08	cycles: 1986750	retired: 1104084
+INFO: 00:00:09	cycles: 2252298	retired: 1251656
+INFO: 00:00:10	cycles: 2517530	retired: 1399052
+INFO: 00:00:11	cycles: 2782299	retired: 1546189
+INFO: 00:00:12	cycles: 3048330	retired: 1694030
+INFO: 00:00:13	cycles: 3314116	retired: 1841734
+INFO: 00:00:14	cycles: 3566413	retired: 1981943
+INFO: 00:00:15	cycles: 3830507	retired: 2128705
+INFO: 00:00:16	cycles: 4095278	retired: 2275845
+INFO: 00:00:17	cycles: 4359126	retired: 2422472
+INFO: 00:00:18	cycles: 4623521	retired: 2569402
+INFO: 00:00:19	cycles: 4887634	retired: 2716176
+INFO: 00:00:20	cycles: 5146442	retired: 2860002
+INFO: 00:00:21	cycles: 5372263	retired: 2985495
+INFO: 00:00:22	cycles: 5636410	retired: 3132289
+INFO: 00:00:23	cycles: 5900195	retired: 3278881
+INFO: 00:00:24	cycles: 6163536	retired: 3425226
+INFO: 00:00:25	cycles: 6427497	retired: 3571915
+INFO: 00:00:26	cycles: 6691104	retired: 3718409
+INFO: 00:00:27	cycles: 6920797	retired: 3846056
+INFO: 00:00:28	cycles: 7184373	retired: 3992530
+INFO: 00:00:29	cycles: 7441385	retired: 4135358
+INFO: 00:00:30	cycles: 7700830	retired: 4279538
+INFO: 00:00:31	cycles: 7966531	retired: 4427195
+INFO: 00:00:32	cycles: 8085882	retired: 4493520
+INFO: 00:00:33	cycles: 8162647	retired: 4536181
+INFO: 00:00:34	cycles: 8212627	retired: 4563957
+INFO: 00:00:35	cycles: 8270839	retired: 4596305
+INFO: 00:00:36	cycles: 8339765	retired: 4634611
+INFO: 00:00:37	cycles: 8420590	retired: 4679526
+INFO: 00:00:38	cycles: 8495372	retired: 4721084
+INFO: 00:00:39	cycles: 8567299	retired: 4761055
+INFO: 00:00:40	cycles: 8632277	retired: 4797165
+INFO: 00:00:41	cycles: 8706491	retired: 4838408
+INFO: 00:00:42	cycles: 8762209	retired: 4869371
+INFO: 00:00:43	cycles: 8792284	retired: 4886086
+INFO: 00:00:44	cycles: 8813910	retired: 4898104
+INFO: 00:00:45	cycles: 8843753	retired: 4914687
+INFO: 00:00:46	cycles: 8863436	retired: 4925626
+INFO: 00:00:47	cycles: 8890627	retired: 4940737
+INFO: 00:00:48	cycles: 8923835	retired: 4959191
+INFO: 00:00:49	cycles: 8958484	retired: 4978448
+INFO: 00:00:50	cycles: 8989728	retired: 4995811
+INFO: 00:00:51	cycles: 9019208	retired: 5012193
+INFO: 00:00:52	cycles: 9083853	retired: 5048117
+INFO: 00:00:53	cycles: 9149821	retired: 5084777
+INFO: 00:00:54	cycles: 9217978	retired: 5122654
+INFO: 00:00:55	cycles: 9282263	retired: 5158379
+INFO: 00:00:56	cycles: 9342665	retired: 5191945
+INFO: 00:00:57	cycles: 9400311	retired: 5223981
+
+Program exited with code: 0
+================================== Post-run ==================================

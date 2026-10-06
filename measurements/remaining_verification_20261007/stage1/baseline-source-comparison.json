@@ -1,0 +1,6 @@
+{
+  "upstream_commit": "231796cc48868f4ea276f652139b6bebbad0cd02",
+  "upstream_solver_sha256": "562764bae4a5ca52a57ea82ac7a8490b09f92805ae3fd5bde1a4e67af82fbdfc",
+  "workspace_solver_sha256": "562764bae4a5ca52a57ea82ac7a8490b09f92805ae3fd5bde1a4e67af82fbdfc",
+  "byte_identical": true
+}

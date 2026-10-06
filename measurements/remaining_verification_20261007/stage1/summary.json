@@ -1,0 +1,54 @@
+{
+  "RV32_ISS": {
+    "4096": {
+      "n": 3,
+      "rss_median_bytes": 71204864,
+      "rss_min_bytes": 68861952,
+      "rss_max_bytes": 71237632,
+      "rss_sample_sd_bytes": 1362238.7115803163,
+      "rss_sample_variance_bytes_squared": 1855694307328,
+      "rss_cv_percent": 1.9340416983275948,
+      "rate_median": 9203296.023394348,
+      "rate_sample_sd": 3858499.7789282855
+    },
+    "4194304": {
+      "n": 3,
+      "rss_median_bytes": 295632896,
+      "rss_min_bytes": 290734080,
+      "rss_max_bytes": 303333376,
+      "rss_sample_sd_bytes": 6351352.219906561,
+      "rss_sample_variance_bytes_squared": 40339675021312,
+      "rss_cv_percent": 2.1416262921428726,
+      "rate_median": 6698174.537703151,
+      "rate_sample_sd": 1996199.5019495802
+    },
+    "slope_host_bytes_per_guest_byte": 53.56011730205279,
+    "payload_extrapolation_host_bytes": 985796132.8328446
+  },
+  "RV32_5S": {
+    "4096": {
+      "n": 3,
+      "rss_median_bytes": 78807040,
+      "rss_min_bytes": 77856768,
+      "rss_max_bytes": 103088128,
+      "rss_sample_sd_bytes": 14300907.772977956,
+      "rss_sample_variance_bytes_squared": 204515963131221.34,
+      "rss_cv_percent": 16.51680598789988,
+      "rate_median": 99002.97472642912,
+      "rate_sample_sd": 5728.211311285755
+    },
+    "4194304": {
+      "n": 3,
+      "rss_median_bytes": 228327424,
+      "rss_min_bytes": 227966976,
+      "rss_max_bytes": 244580352,
+      "rss_sample_sd_bytes": 9489396.305449432,
+      "rss_sample_variance_bytes_squared": 90048642241877.33,
+      "rss_cv_percent": 4.061808309560607,
+      "rate_median": 104753.77903082459,
+      "rate_sample_sd": 3798.9130433313812
+    },
+    "slope_host_bytes_per_guest_byte": 35.683284457478,
+    "payload_extrapolation_host_bytes": 656765623.319648
+  }
+}

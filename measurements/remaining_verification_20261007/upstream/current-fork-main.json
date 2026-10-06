@@ -1,0 +1,101 @@
+{
+  "sha": "25bf01290c594bdf06040b1b444e1e1694fe55dd",
+  "node_id": "C_kwDOU8btaNoAKDI1YmYwMTI5MGM1OTRiZGYwNjA0MGIxYjQ0NGUxZTE2OTRmZTU1ZGQ",
+  "commit": {
+    "author": {
+      "name": "creeper94666",
+      "email": "ian0974022241@gmail.com",
+      "date": "2026-10-06T13:13:09Z"
+    },
+    "committer": {
+      "name": "creeper94666",
+      "email": "ian0974022241@gmail.com",
+      "date": "2026-10-06T13:13:09Z"
+    },
+    "message": "Show assignment verification results directly in README\n\nAdd the three target cases and specified solution, H1–H4/T5–T7 coverage with direct evidence links, exhaustive performance results, memory section sizes and final C/assembly comparison. Distinguish completed CLI checks from pending GUI observations.",
+    "tree": {
+      "sha": "9cd46daea22ab23582a7a167c086217a6b0d65c5",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/9cd46daea22ab23582a7a167c086217a6b0d65c5"
+    },
+    "url": "https://api.github.com/repos/creeper94666/minirubik/git/commits/25bf01290c594bdf06040b1b444e1e1694fe55dd",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/creeper94666/minirubik/commits/25bf01290c594bdf06040b1b444e1e1694fe55dd",
+  "html_url": "https://github.com/creeper94666/minirubik/commit/25bf01290c594bdf06040b1b444e1e1694fe55dd",
+  "comments_url": "https://api.github.com/repos/creeper94666/minirubik/commits/25bf01290c594bdf06040b1b444e1e1694fe55dd/comments",
+  "author": {
+    "login": "creeper94666",
+    "id": 276598604,
+    "node_id": "U_kgDOEHyPTA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/276598604?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/creeper94666",
+    "html_url": "https://github.com/creeper94666",
+    "followers_url": "https://api.github.com/users/creeper94666/followers",
+    "following_url": "https://api.github.com/users/creeper94666/following{/other_user}",
+    "gists_url": "https://api.github.com/users/creeper94666/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/creeper94666/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/creeper94666/subscriptions",
+    "organizations_url": "https://api.github.com/users/creeper94666/orgs",
+    "repos_url": "https://api.github.com/users/creeper94666/repos",
+    "events_url": "https://api.github.com/users/creeper94666/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/creeper94666/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "creeper94666",
+    "id": 276598604,
+    "node_id": "U_kgDOEHyPTA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/276598604?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/creeper94666",
+    "html_url": "https://github.com/creeper94666",
+    "followers_url": "https://api.github.com/users/creeper94666/followers",
+    "following_url": "https://api.github.com/users/creeper94666/following{/other_user}",
+    "gists_url": "https://api.github.com/users/creeper94666/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/creeper94666/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/creeper94666/subscriptions",
+    "organizations_url": "https://api.github.com/users/creeper94666/orgs",
+    "repos_url": "https://api.github.com/users/creeper94666/repos",
+    "events_url": "https://api.github.com/users/creeper94666/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/creeper94666/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "c5600e0b01bfa9faa7078e3910f08aca1b2eae9f",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/commits/c5600e0b01bfa9faa7078e3910f08aca1b2eae9f",
+      "html_url": "https://github.com/creeper94666/minirubik/commit/c5600e0b01bfa9faa7078e3910f08aca1b2eae9f"
+    }
+  ],
+  "stats": {
+    "total": 85,
+    "additions": 85,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "a877514819cfbadef8e3e2e557cfc54bb73e64dd",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 85,
+      "deletions": 0,
+      "changes": 85,
+      "blob_url": "https://github.com/creeper94666/minirubik/blob/25bf01290c594bdf06040b1b444e1e1694fe55dd/README.md",
+      "raw_url": "https://github.com/creeper94666/minirubik/raw/25bf01290c594bdf06040b1b444e1e1694fe55dd/README.md",
+      "contents_url": "https://api.github.com/repos/creeper94666/minirubik/contents/README.md?ref=25bf01290c594bdf06040b1b444e1e1694fe55dd",
+      "patch": "@@ -1,5 +1,8 @@\n # minirubik — RV32I coursework\n \n+[Current files](#current-rv32i-version) · [Three target tests](#three-target-tests) ·\n+[H1–H4 / T5–T7](#correctness-gates) · [Performance and memory](#performance-and-memory)\n+\n ## Current RV32I version\n \n **Start with the files below. `solver7.c` and `solver7.s` are older baselines;\n@@ -32,6 +35,88 @@ Development code and records include disclosed AI assistance. See\n [submission status](docs/submission-status.md) for remaining student-owned work\n and GUI observations; these results do not mean the entire assignment is complete.\n \n+## Assignment verification results\n+\n+The results below apply to the **current version**, with rendering disabled.\n+They are AI-executed development measurements; independent student measurements\n+and analysis remain required. Links lead directly to the supporting records.\n+\n+### Three target tests\n+\n+All three return the expected shortest length and pass independent solution replay\n+on both processors, with no ISA extensions enabled.\n+\n+| Test | Input | Optimal moves | RV32_ISS retired instructions | RV32_5S retired instructions |\n+| --- | --- | ---: | ---: | ---: |\n+| Solved | `12345671111111` | 0 | [424](measurements/solver7_submission_validation/models/RV32_ISS-12345671111111.json) | [423](measurements/solver7_submission_validation/models/RV32_5S-12345671111111.json) |\n+| One move | `25314672313211` | 1 | [1,236](measurements/solver7_submission_validation/models/RV32_ISS-25314672313211.json) | [1,235](measurements/solver7_submission_validation/models/RV32_5S-25314672313211.json) |\n+| Distance 11 | `21345671111111` | 11 | [15,147,934](measurements/solver7_submission_validation/models/RV32_ISS-21345671111111.json) | [15,147,933](measurements/solver7_submission_validation/models/RV32_5S-21345671111111.json) |\n+\n+For **`21345671111111`**, the returned 11-move solution is:\n+\n+```text\n+R B' D2 R' B R' B' R D2 R B\n+```\n+\n+Counts differ by one between models; each measured count is reported without\n+adjustment. [All six results](measurements/solver7_submission_validation/models/summary.json)\n+and [raw logs / instruction reports](measurements/solver7_submission_validation/models/)\n+are retained.\n+\n+### Correctness gates\n+\n+| Gate | Result and coverage | Evidence |\n+| --- | --- | --- |\n+| H1 — admissible heuristic | PASS for all 3,674,160 states against exact BFS distances | [H1/H2 summary](measurements/solver7_search/full/host/oracle-summary.json) |\n+| H2 — distance tables | PASS: legal/unused slots, solved entries and maxima checked; permutation maximum 7, orientation maximum 6 | [H1/H2 summary](measurements/solver7_search/full/host/oracle-summary.json) |\n+| H3 — optimal search | PASS for all 3,674,160 C states, with optimal lengths and independent replay; 415.31 s using four workers | [H3 summary](measurements/solver7_search/full/host/summary.json), [reproduction commands](measurements/solver7_search/README.md) |\n+| H4 — packed accessors | No nibble-packed distance table is used. Canonical move masks are separately checked over 8,080 contexts | [Applicability](docs/submission-status.md#validation-evidence), [mask test](tests/solver7_search_assembly_test.py) |\n+| T5 — target replay | PASS for all 2,644 distance-11 assembly runs and the three model-test inputs | [Per-input results](measurements/solver7_submission_validation/ripes/results.csv), [model results](measurements/solver7_submission_validation/models/summary.json) |\n+| T6 — specified input | PASS: `21345671111111` returns 11 moves and replays to solved | [Specified-input result](measurements/solver7_submission_validation/models/RV32_ISS-21345671111111.json) |\n+| T7 — processor models | All three selected inputs PASS on RV32_ISS and RV32_5S; unseen grader inputs are not claimed as already tested | [Six model tests](measurements/solver7_submission_validation/models/summary.json), [runner](tools/validate_submission_models.py) |\n+\n+H3 exhaustively validates the **C search**. The assembly evidence covers all\n+2,644 distance-11 states and the listed model cases, not every legal assembly input.\n+A CLI pipeline run does not replace the required personal GUI signal walkthrough\n+or live LED demonstration; those remain outstanding.\n+\n+### Performance and memory\n+\n+Counts include startup, search, internal replay, output and exit on the pinned\n+RV32_ISS build. Static data means `.rodata + .data + .bss`; code size means linked\n+`.text`, with the renderer compiled out.\n+\n+| Metric | Required limit | Current optimized assembly |\n+| --- | ---: | ---: |\n+| Worst case over all 2,644 distance-11 inputs | ≤ 50,000,000 retired instructions | **38,543,830 — PASS; 0 inputs above the limit |\n+| Worst-case input | — | `54721631111111` |\n+| Specified input `21345671111111` | Report separately | **15,147,934** retired instructions |\n+| `.rodata` | — | 126,060 bytes |\n+| `.data` | — | 15 bytes |\n+| `.bss` | — | 4 bytes |\n+| **Total static data** | **≤ 131,072 bytes (128 KiB)** | **126,079 bytes — PASS** |\n+| Linked `.text` | Compare with final C | 4,296 bytes |\n+| Reserved stack, separate from static-data total | Report working memory | 4,096 bytes |\n+\n+| Final C vs assembly, same inputs/build conventions | C, GCC `-O2` | Optimized assembly |\n+| --- | ---: | ---: |\n+| `21345671111111` retired instructions | 31,343,837 | 15,147,934 |\n+| `54721631111111` retired instructions | 79,635,246 | 38,543,830 |\n+| Linked `.text` | 2,752 bytes | 4,296 bytes |\n+| Static data | 126,088 bytes | 126,079 bytes |\n+\n+The assembly executes fewer instructions but uses more code bytes; specialized\n+move bodies and indexing trade code size for execution cost.\n+\n+Evidence: [full sweep summary](measurements/solver7_submission_validation/ripes/summary.json),\n+[all 2,644 counts and paths](measurements/solver7_submission_validation/ripes/results.csv),\n+[C comparison](solver7_search_README.md),\n+[compiler / Ripes build](measurements/solver7_submission_validation/environment.json),\n+[source / binary fingerprints](measurements/solver7_submission_validation/fingerprints.json).\n+\n+Other required measurements: [Stage 1 memory/rate reproduction aid and qualified pilot results](measurements/stage1_support/README.md)\n+and [step-by-step assembly optimization measurements](measurements/solver7_pruning/README.md).\n+\n ## Historical files — retained for comparison\n \n | Files | Role |"
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "sha": "5777795b2fb96ef8d1dd4972c5daef036ff70ef3",
+  "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/5777795b2fb96ef8d1dd4972c5daef036ff70ef3",
+  "tree": [
+    {
+      "path": ".clang-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06dd4147dc6b6a34e0d999579f7b29bd8aceed3b",
+      "size": 761,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/06dd4147dc6b6a34e0d999579f7b29bd8aceed3b"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "491164c465a07372cf0b367341d1b5011b4ee9c4",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/491164c465a07372cf0b367341d1b5011b4ee9c4"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b053f0b96283bef688b49bc3d000f670df98205",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/2b053f0b96283bef688b49bc3d000f670df98205"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11055e68d0a0bb8bdb06d97ed2f886276b51d401",
+      "size": 486,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/11055e68d0a0bb8bdb06d97ed2f886276b51d401"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "703441dbcb296dc172ec7d9a1debdb852be48ef0",
+      "size": 42,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/703441dbcb296dc172ec7d9a1debdb852be48ef0"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baf52ffa0b9e7f7eee653ddbfd0aecb43ddb4fb3",
+      "size": 1082,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/baf52ffa0b9e7f7eee653ddbfd0aecb43ddb4fb3"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62a1161ac4c82ca42eedf997f36c7ebc146dcb78",
+      "size": 3638,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/62a1161ac4c82ca42eedf997f36c7ebc146dcb78"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed985371960b5f921472c098f8598dfa837c7922",
+      "size": 9186,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ed985371960b5f921472c098f8598dfa837c7922"
+    },
+    {
+      "path": "build_solver3.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44480701f1315acab103989385de1e3cde7b3157",
+      "size": 1787,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/44480701f1315acab103989385de1e3cde7b3157"
+    },
+    {
+      "path": "build_solver4.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d6390a1e22cbc461a48d7452ac7fb87a821d829",
+      "size": 1960,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/4d6390a1e22cbc461a48d7452ac7fb87a821d829"
+    },
+    {
+      "path": "build_solver5.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86bff067e05a27503c1426d8ce3950b2e415672f",
+      "size": 2278,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/86bff067e05a27503c1426d8ce3950b2e415672f"
+    },
+    {
+      "path": "build_solver6.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108c5997557f070dac27051bb522d58a64bb436a",
+      "size": 2278,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/108c5997557f070dac27051bb522d58a64bb436a"
+    },
+    {
+      "path": "build_solver7.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0947bbbee1d6745c1e5ae6e25d6a78802cb41015",
+      "size": 2278,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/0947bbbee1d6745c1e5ae6e25d6a78802cb41015"
+    },
+    {
+      "path": "build_solver7_led.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "570a18dc99673269aee5c67b448564d8e64bd9e3",
+      "size": 1447,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/570a18dc99673269aee5c67b448564d8e64bd9e3"
+    },
+    {
+      "path": "build_solver7_optimization.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "627f5616deb47cd004274c135a665bec8d28203c",
+      "size": 455,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/627f5616deb47cd004274c135a665bec8d28203c"
+    },
+    {
+      "path": "cube_led.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be7abe598bba35742c9e78ec2086094208a48607",
+      "size": 1980,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/be7abe598bba35742c9e78ec2086094208a48607"
+    },
+    {
+      "path": "cube_led.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65b0fcc1ca144441e04d7f73f2a559b677afea3b",
+      "size": 934,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/65b0fcc1ca144441e04d7f73f2a559b677afea3b"
+    },
+    {
+      "path": "measurements",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "492da46907fb98a10d45b8276ea2b0a8239eb83c",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/492da46907fb98a10d45b8276ea2b0a8239eb83c"
+    },
+    {
+      "path": "measurements/solver5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70a3467b943bd83fe870f685d270389a239bd9b7",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/70a3467b943bd83fe870f685d270389a239bd9b7"
+    },
+    {
+      "path": "measurements/solver5/comparison.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e54dd75f33913839cf6e8967c0026b0482c8c5",
+      "size": 936,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/38e54dd75f33913839cf6e8967c0026b0482c8c5"
+    },
+    {
+      "path": "measurements/solver5/ripes-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea26f8ddcfac95d5da220978d6f28dcbee91f4f1",
+      "size": 195,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ea26f8ddcfac95d5da220978d6f28dcbee91f4f1"
+    },
+    {
+      "path": "measurements/solver5/run.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c75f2417cacd0dafcd93e9bfd0d2b7489146d17",
+      "size": 958,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/4c75f2417cacd0dafcd93e9bfd0d2b7489146d17"
+    },
+    {
+      "path": "measurements/solver6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a454e4c4bb6ab73abe47e17232c75c2ae4c89db4",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/a454e4c4bb6ab73abe47e17232c75c2ae4c89db4"
+    },
+    {
+      "path": "measurements/solver6/comparison.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4482cb639bbd231b7ab6b94fc8ff2593cad7133",
+      "size": 1055,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/c4482cb639bbd231b7ab6b94fc8ff2593cad7133"
+    },
+    {
+      "path": "measurements/solver6/ripes-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09205ae809d48e2d530413f5601b08dc7dc27163",
+      "size": 193,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/09205ae809d48e2d530413f5601b08dc7dc27163"
+    },
+    {
+      "path": "measurements/solver6/run.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82bb908be5ddde911846e5f118a7d754c4d2ddd7",
+      "size": 608,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/82bb908be5ddde911846e5f118a7d754c4d2ddd7"
+    },
+    {
+      "path": "measurements/solver7",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9408a57c12732494deab4bf0530e2fd689ac9bd7",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/9408a57c12732494deab4bf0530e2fd689ac9bd7"
+    },
+    {
+      "path": "measurements/solver7/comparison.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b70c468a595c3af4784a22f0728c4147b96985c",
+      "size": 740,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/8b70c468a595c3af4784a22f0728c4147b96985c"
+    },
+    {
+      "path": "measurements/solver7/ripes-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8788b2eb5933e30b523ac08b21a066371bcf917e",
+      "size": 193,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/8788b2eb5933e30b523ac08b21a066371bcf917e"
+    },
+    {
+      "path": "measurements/solver7/run.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3800d31cc71a3ec805fb0f0a044b67773b62aa59",
+      "size": 558,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/3800d31cc71a3ec805fb0f0a044b67773b62aa59"
+    },
+    {
+      "path": "measurements/solver7_horner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4944dcd921d0370885f798dc7fb84840c76e7dfb",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/4944dcd921d0370885f798dc7fb84840c76e7dfb"
+    },
+    {
+      "path": "measurements/solver7_horner/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c43e9abb29cc2b8da05ce4f96ce7c89f96fcf06",
+      "size": 1994,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/9c43e9abb29cc2b8da05ce4f96ce7c89f96fcf06"
+    },
+    {
+      "path": "measurements/solver7_horner/ripes-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f285487d55d23b4308c534e1f890b119ef858c7b",
+      "size": 206,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/f285487d55d23b4308c534e1f890b119ef858c7b"
+    },
+    {
+      "path": "measurements/solver7_horner/run.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40ba085f374df5b18a6dfe29224c02d9ad34a4a8",
+      "size": 521,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/40ba085f374df5b18a6dfe29224c02d9ad34a4a8"
+    },
+    {
+      "path": "measurements/solver7_led_pipeline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14da01981e31645d6ef6dddd2b10cebc7de1de51",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/14da01981e31645d6ef6dddd2b10cebc7de1de51"
+    },
+    {
+      "path": "measurements/solver7_led_pipeline/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0eb439edc257daf6590beafa0ecbb43c5be6e6e",
+      "size": 2580,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/c0eb439edc257daf6590beafa0ecbb43c5be6e6e"
+    },
+    {
+      "path": "measurements/solver7_led_pipeline/pipeline.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73050199e13eda194c3932b1c10db5e989da992f",
+      "size": 41203,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/73050199e13eda194c3932b1c10db5e989da992f"
+    },
+    {
+      "path": "measurements/solver7_led_pipeline/pipeline.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c67fc330034eb377578e5b8cb31f64e62239b4f5",
+      "size": 280,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/c67fc330034eb377578e5b8cb31f64e62239b4f5"
+    },
+    {
+      "path": "measurements/solver7_optimization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "666a313bc5bf67b788d1672e716501d0fb5d1a8d",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/666a313bc5bf67b788d1672e716501d0fb5d1a8d"
+    },
+    {
+      "path": "measurements/solver7_optimization/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f981a496ce952045e31caa02767b682b60a29eb0",
+      "size": 2724,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/f981a496ce952045e31caa02767b682b60a29eb0"
+    },
+    {
+      "path": "measurements/solver7_optimization/baseline-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8788b2eb5933e30b523ac08b21a066371bcf917e",
+      "size": 193,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/8788b2eb5933e30b523ac08b21a066371bcf917e"
+    },
+    {
+      "path": "measurements/solver7_optimization/baseline-run.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc3b93974a1e7ffdd2a17fb4b7b84695bf74ba11",
+      "size": 558,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/dc3b93974a1e7ffdd2a17fb4b7b84695bf74ba11"
+    },
+    {
+      "path": "measurements/solver7_optimization/ripes-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7473af35d49d0ef0aa6a2bdd6bcf6997f6163a6b",
+      "size": 206,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/7473af35d49d0ef0aa6a2bdd6bcf6997f6163a6b"
+    },
+    {
+      "path": "measurements/solver7_optimization/run.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5646e8e562c3713c04e4d6199720a9a3b4c8e55c",
+      "size": 521,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/5646e8e562c3713c04e4d6199720a9a3b4c8e55c"
+    },
+    {
+      "path": "measurements/solver7_optimization/solver7_optimization_pre_horner.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceb5402f34bd9ff21ae72deb3cff185659edd76d",
+      "size": 425327,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ceb5402f34bd9ff21ae72deb3cff185659edd76d"
+    },
+    {
+      "path": "measurements/solver7_optimization_led",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79d7f5ff682163ac4db2b18b2cb91ecba0d2e10e",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/79d7f5ff682163ac4db2b18b2cb91ecba0d2e10e"
+    },
+    {
+      "path": "measurements/solver7_optimization_led/test-iret.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca83a5079098d9b2c5af04ce9031af447d58850f",
+      "size": 239,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ca83a5079098d9b2c5af04ce9031af447d58850f"
+    },
+    {
+      "path": "measurements/solver7_optimization_led/test.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceac9d8e9a0ad8723715cfd7e7e1db45d8b43f99",
+      "size": 554,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ceac9d8e9a0ad8723715cfd7e7e1db45d8b43f99"
+    },
+    {
+      "path": "mini.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9693f2888490380a08da2ab9ac0fe5da1b3cf846",
+      "size": 2501,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/9693f2888490380a08da2ab9ac0fe5da1b3cf846"
+    },
+    {
+      "path": "report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be9b5883fd629236044aee539b6f76babf615377",
+      "size": 41507,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/be9b5883fd629236044aee539b6f76babf615377"
+    },
+    {
+      "path": "solver.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "925be7eb7a6f6839a754e949018a1d4cdfeb79e3",
+      "size": 12659,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/925be7eb7a6f6839a754e949018a1d4cdfeb79e3"
+    },
+    {
+      "path": "solver2.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fed6867a536dafb453a94f604fd3a54bd431656",
+      "size": 10423,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/7fed6867a536dafb453a94f604fd3a54bd431656"
+    },
+    {
+      "path": "solver3.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f4b92a544a08df2a6857880e7069ae7474d400",
+      "size": 12631,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/49f4b92a544a08df2a6857880e7069ae7474d400"
+    },
+    {
+      "path": "solver3.ld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97301f4d0adf58b1bd61103c8e2f147806ce2284",
+      "size": 700,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/97301f4d0adf58b1bd61103c8e2f147806ce2284"
+    },
+    {
+      "path": "solver3.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef84f5ed812186a60ac7992e393f87c8a2098a53",
+      "size": 15261,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ef84f5ed812186a60ac7992e393f87c8a2098a53"
+    },
+    {
+      "path": "solver3_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c5e8506d356766dc21151a97d9f476aadf661d2",
+      "size": 2260,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/6c5e8506d356766dc21151a97d9f476aadf661d2"
+    },
+    {
+      "path": "solver4.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261f14bf12e423b0255fe13dd8d606b2ac26dcea",
+      "size": 13153,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/261f14bf12e423b0255fe13dd8d606b2ac26dcea"
+    },
+    {
+      "path": "solver4.ld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97301f4d0adf58b1bd61103c8e2f147806ce2284",
+      "size": 700,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/97301f4d0adf58b1bd61103c8e2f147806ce2284"
+    },
+    {
+      "path": "solver4.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a93ec024d7f5ecb469a3d5be79f0f9c39133df6a",
+      "size": 16211,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/a93ec024d7f5ecb469a3d5be79f0f9c39133df6a"
+    },
+    {
+      "path": "solver4_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d34c76d7291ea94a9b658749204a1db75f70f05",
+      "size": 2454,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/0d34c76d7291ea94a9b658749204a1db75f70f05"
+    },
+    {
+      "path": "solver5.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05aab629d19c212022410100dfaac9ba0cab5186",
+      "size": 12947,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/05aab629d19c212022410100dfaac9ba0cab5186"
+    },
+    {
+      "path": "solver5.ld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97301f4d0adf58b1bd61103c8e2f147806ce2284",
+      "size": 700,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/97301f4d0adf58b1bd61103c8e2f147806ce2284"
+    },
+    {
+      "path": "solver5.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6d576149615e98d6c4ff2b2ee767eb531304581",
+      "size": 619040,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/c6d576149615e98d6c4ff2b2ee767eb531304581"
+    },
+    {
+      "path": "solver5_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff6ef1f8d70a3baeaf06b6b23ad9fcfb5fc72db9",
+      "size": 2957,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/ff6ef1f8d70a3baeaf06b6b23ad9fcfb5fc72db9"
+    },
+    {
+      "path": "solver5_tables.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5916301776f57c34c9885cd9db40fd8cb032b62a",
+      "size": 282719,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/5916301776f57c34c9885cd9db40fd8cb032b62a"
+    },
+    {
+      "path": "solver6.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c839ebc6fb99639f74ff87ed9371a7c812d3880e",
+      "size": 11802,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/c839ebc6fb99639f74ff87ed9371a7c812d3880e"
+    },
+    {
+      "path": "solver6.ld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97301f4d0adf58b1bd61103c8e2f147806ce2284",
+      "size": 700,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/97301f4d0adf58b1bd61103c8e2f147806ce2284"
+    },
+    {
+      "path": "solver6.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4f347f47bdcae2dcbc3ae4825f73ecce4da76b6",
+      "size": 419745,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/c4f347f47bdcae2dcbc3ae4825f73ecce4da76b6"
+    },
+    {
+      "path": "solver6_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63441f8bd97e9edc4775bccf3b06258a0fc056c5",
+      "size": 3557,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/63441f8bd97e9edc4775bccf3b06258a0fc056c5"
+    },
+    {
+      "path": "solver6_tables.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1082738359465d94b741d37dfece704f088dbbf2",
+      "size": 539135,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/1082738359465d94b741d37dfece704f088dbbf2"
+    },
+    {
+      "path": "solver7.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04a986eb7fa577c319896bee65fa0019137648bc",
+      "size": 12291,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/04a986eb7fa577c319896bee65fa0019137648bc"
+    },
+    {
+      "path": "solver7.ld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97301f4d0adf58b1bd61103c8e2f147806ce2284",
+      "size": 700,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/97301f4d0adf58b1bd61103c8e2f147806ce2284"
+    },
+    {
+      "path": "solver7.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8ddeac70c74a18dbef11bc73ed2586821294e4b",
+      "size": 420011,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/a8ddeac70c74a18dbef11bc73ed2586821294e4b"
+    },
+    {
+      "path": "solver7_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b509203d99cfe39aee8412430ad171442d92196c",
+      "size": 2398,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/b509203d99cfe39aee8412430ad171442d92196c"
+    },
+    {
+      "path": "solver7_led.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8f996c7474cfed0b3dea92b04506d839f9533f2",
+      "size": 967,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/f8f996c7474cfed0b3dea92b04506d839f9533f2"
+    },
+    {
+      "path": "solver7_led_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a4dcd9eb6c18bc72cec46df9ee19e141e4366e3",
+      "size": 6254,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/1a4dcd9eb6c18bc72cec46df9ee19e141e4366e3"
+    },
+    {
+      "path": "solver7_led_replay.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "455e0ddf45698becf6957675a55d1943feed230f",
+      "size": 1886,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/455e0ddf45698becf6957675a55d1943feed230f"
+    },
+    {
+      "path": "solver7_optimization.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15a30fc194c190c06f8129660b876013d12f4b2f",
+      "size": 425088,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/15a30fc194c190c06f8129660b876013d12f4b2f"
+    },
+    {
+      "path": "solver7_optimization_led.s",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f018d3570b1d5b3f69654ef1d43f73421b598e6",
+      "size": 432860,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/7f018d3570b1d5b3f69654ef1d43f73421b598e6"
+    },
+    {
+      "path": "solver7_optimization_led_README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "761ffe3376c95b297e8bc69138ffabccfe637756",
+      "size": 3272,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/761ffe3376c95b297e8bc69138ffabccfe637756"
+    },
+    {
+      "path": "solver7_tables.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b40945702a52e9596d7774cc7b7461b72b1d44d",
+      "size": 539135,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/9b40945702a52e9596d7774cc7b7461b72b1d44d"
+    },
+    {
+      "path": "test_all.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f1482ec917d29f88cae30733d30a01137efcb38",
+      "size": 7528,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/5f1482ec917d29f88cae30733d30a01137efcb38"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5086946bba54235db3c1c4bb96c65949a70353ab",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/5086946bba54235db3c1c4bb96c65949a70353ab"
+    },
+    {
+      "path": "tests/led_matrix_demo.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abc7cf89cdf5e2e30a727a69a61eb3be73cc46df",
+      "size": 1181,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/abc7cf89cdf5e2e30a727a69a61eb3be73cc46df"
+    },
+    {
+      "path": "tests/solutions.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79348584197558bdb0097dc2c988c2d51362868e",
+      "size": 583,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/79348584197558bdb0097dc2c988c2d51362868e"
+    },
+    {
+      "path": "tests/solver3_host_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58d808aa81b9ac3e87fbdc9ecfb1f4f18be2c293",
+      "size": 1935,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/58d808aa81b9ac3e87fbdc9ecfb1f4f18be2c293"
+    },
+    {
+      "path": "tests/solver4_host_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76234e8267b5473bd64a314653be9e29d811b428",
+      "size": 2196,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/76234e8267b5473bd64a314653be9e29d811b428"
+    },
+    {
+      "path": "tests/solver5_host_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73e5e08d975774117c8b4ba740ef2bd8779f9d78",
+      "size": 3649,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/73e5e08d975774117c8b4ba740ef2bd8779f9d78"
+    },
+    {
+      "path": "tests/solver6_host_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb855387085b4c103b5e4b803c91f313a00bca8d",
+      "size": 4423,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/cb855387085b4c103b5e4b803c91f313a00bca8d"
+    },
+    {
+      "path": "tests/solver7_horner_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "569d144e7a7148b57a262b65a217207d375600b5",
+      "size": 1492,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/569d144e7a7148b57a262b65a217207d375600b5"
+    },
+    {
+      "path": "tests/solver7_host_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71efeedad6d86580f791dd4c1c76e2338b0501a8",
+      "size": 4531,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/71efeedad6d86580f791dd4c1c76e2338b0501a8"
+    },
+    {
+      "path": "tests/solver7_led_loop_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b760aeab50284f47111a5f14ae0c47fe45ba91bf",
+      "size": 877,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/b760aeab50284f47111a5f14ae0c47fe45ba91bf"
+    },
+    {
+      "path": "tests/solver7_led_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b871dc8ecde2f93021829608c6097e7df7e0592b",
+      "size": 3960,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/b871dc8ecde2f93021829608c6097e7df7e0592b"
+    },
+    {
+      "path": "tests/solver7_optimization_led_test.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ba37a4d571ec55ffbfb98940f018d8d2779cfba",
+      "size": 1531,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/0ba37a4d571ec55ffbfb98940f018d8d2779cfba"
+    },
+    {
+      "path": "tests/solver7_optimization_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ec0fe5b04490ce237c7a566be11009c10180dfb",
+      "size": 2820,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/7ec0fe5b04490ce237c7a566be11009c10180dfb"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad474cea65159be254cab798e8b5ab8af8d0aa99",
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/trees/ad474cea65159be254cab798e8b5ab8af8d0aa99"
+    },
+    {
+      "path": "tools/build_solver7_optimization_led.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00ad1a7de02531b110d8d7f5b592c373469993ef",
+      "size": 2839,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/00ad1a7de02531b110d8d7f5b592c373469993ef"
+    },
+    {
+      "path": "tools/generate_solver5_tables.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "140b6ef7028b0608b69ba319a53077ef63f3a06f",
+      "size": 1213,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/140b6ef7028b0608b69ba319a53077ef63f3a06f"
+    },
+    {
+      "path": "tools/generate_solver6_tables.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "116a0a9e0b014f6a2fa19b628c95cc944663b50b",
+      "size": 1685,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/116a0a9e0b014f6a2fa19b628c95cc944663b50b"
+    },
+    {
+      "path": "tools/generate_solver7_tables.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c7429c887faaa9a2a7050a37239531c7f51ddf9",
+      "size": 1685,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/8c7429c887faaa9a2a7050a37239531c7f51ddf9"
+    },
+    {
+      "path": "tools/preview_solver7_led.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c51bfc1ddc920778ef9b651270ccb47a0ad02f",
+      "size": 2571,
+      "url": "https://api.github.com/repos/creeper94666/minirubik/git/blobs/b9c51bfc1ddc920778ef9b651270ccb47a0ad02f"
+    }
+  ],
+  "truncated": false
+}

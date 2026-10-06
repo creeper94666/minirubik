@@ -1,0 +1,7 @@
+Observed in live Ripes I/O exports (initial-running-ax.txt):
+#define LED_MATRIX_0_BASE (0xf0000000)
+#define LED_MATRIX_0_SIZE (0xdac)
+#define LED_MATRIX_0_WIDTH (0x23)
+#define LED_MATRIX_0_HEIGHT (0x19)
+
+35 columns, 25 rows, 3500 bytes. Current processor: 5-stage processor; ISA RV32I. Auto clock active; the loaded program is not established to be the final solver.

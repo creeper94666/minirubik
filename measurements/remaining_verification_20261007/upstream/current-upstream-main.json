@@ -1,0 +1,106 @@
+{
+  "sha": "231796cc48868f4ea276f652139b6bebbad0cd02",
+  "node_id": "C_kwDOUkpln9oAKDIzMTc5NmNjNDg4NjhmNGVhMjc2ZjY1MjEzOWI2YmViYmFkMGNkMDI",
+  "commit": {
+    "author": {
+      "name": "Jim Huang",
+      "email": "jserv@ccns.ncku.edu.tw",
+      "date": "2026-09-28T17:01:41Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-28T17:01:41Z"
+    },
+    "message": "Merge pull request #1 from yenslife/patch-1\n\nFix LaTeX formatting for proper math rendering in report.md",
+    "tree": {
+      "sha": "4f81494dfdebafcfe226bf11199bbab400106051",
+      "url": "https://api.github.com/repos/sysprog21/minirubik/git/trees/4f81494dfdebafcfe226bf11199bbab400106051"
+    },
+    "url": "https://api.github.com/repos/sysprog21/minirubik/git/commits/231796cc48868f4ea276f652139b6bebbad0cd02",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqup11CRC1aQ7uu5UhlAAAGhMQAJUC2YrwTAXJKvRFShMb1KFk\nImg+EMu6P85OZWI/h0oIQ4uPtfZEqbTAnz1emsCY/6iIRAXP/kaIESGqnVjVeNH4\nVnzzJPpNVDOsFZqXgKsGm30NOuJy+YdhqwTLcId3ZdeqJ6T1GR1Y/C+Ii2N+7frK\njCNRFL61K6l/M373rGoGD9mIG3pQTHDleN7/4BDmXC2CdveqG1VXLLhZyUBX+NwB\neCqS2QzQD/sJZlx/ivKg6AXk+uQ9/alhX/q9utBRST60ec66oqD3g48+eS8uqwt+\nvyocW62Xu064N1ph6ZJmIMSDi1rit7MBXF3Hq8TLxKXzFAGbRByj7hCK4ZWXZvmi\nmoVU355qXM8z01caKxeFNDU8SfVfD/m4rv6anYDFkd5Rjlhdnorq53WMhvQ2RMb7\nnv0sgvt57SDVM3aik0q7o3Y4D70b+csyIbbt61bDwqed/zrz/+GKz7kWFvCQeicS\n/l+sCL77MCzTGHUF/Rj8BifBaugpARPIBxxbEXV5tjdtKiHoQ3SyJ5EhyGImhc4E\ncZ7KvVmy8DBmZQKZqM8Ki31DRKDHQ+n30U8abw/nSMmRy1KFyeO3Db7/Rkv4vLML\njkAE0v/on53ZixB/GE9YgDfe2VJYBLwMjz99gXPjZy8kOLCFGoiErg9AXsJTVBIH\nmLFh5tyQLlOoe20g0zm1\n=28l7\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 4f81494dfdebafcfe226bf11199bbab400106051\nparent 3811ad0a87bd490e45099c3cb179ec33caf46cb5\nparent a2a6e780917941b3574835f569a9608414babdf4\nauthor Jim Huang <jserv@ccns.ncku.edu.tw> 1790614901 +0800\ncommitter GitHub <noreply@github.com> 1790614901 +0800\n\nMerge pull request #1 from yenslife/patch-1\n\nFix LaTeX formatting for proper math rendering in report.md",
+      "verified_at": "2026-09-28T17:01:42Z"
+    }
+  },
+  "url": "https://api.github.com/repos/sysprog21/minirubik/commits/231796cc48868f4ea276f652139b6bebbad0cd02",
+  "html_url": "https://github.com/sysprog21/minirubik/commit/231796cc48868f4ea276f652139b6bebbad0cd02",
+  "comments_url": "https://api.github.com/repos/sysprog21/minirubik/commits/231796cc48868f4ea276f652139b6bebbad0cd02/comments",
+  "author": {
+    "login": "jserv",
+    "id": 478921,
+    "node_id": "MDQ6VXNlcjQ3ODkyMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/478921?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jserv",
+    "html_url": "https://github.com/jserv",
+    "followers_url": "https://api.github.com/users/jserv/followers",
+    "following_url": "https://api.github.com/users/jserv/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jserv/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jserv/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jserv/subscriptions",
+    "organizations_url": "https://api.github.com/users/jserv/orgs",
+    "repos_url": "https://api.github.com/users/jserv/repos",
+    "events_url": "https://api.github.com/users/jserv/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jserv/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "3811ad0a87bd490e45099c3cb179ec33caf46cb5",
+      "url": "https://api.github.com/repos/sysprog21/minirubik/commits/3811ad0a87bd490e45099c3cb179ec33caf46cb5",
+      "html_url": "https://github.com/sysprog21/minirubik/commit/3811ad0a87bd490e45099c3cb179ec33caf46cb5"
+    },
+    {
+      "sha": "a2a6e780917941b3574835f569a9608414babdf4",
+      "url": "https://api.github.com/repos/sysprog21/minirubik/commits/a2a6e780917941b3574835f569a9608414babdf4",
+      "html_url": "https://github.com/sysprog21/minirubik/commit/a2a6e780917941b3574835f569a9608414babdf4"
+    }
+  ],
+  "stats": {
+    "total": 23,
+    "additions": 9,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "be9b5883fd629236044aee539b6f76babf615377",
+      "filename": "report.md",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 14,
+      "changes": 23,
+      "blob_url": "https://github.com/sysprog21/minirubik/blob/231796cc48868f4ea276f652139b6bebbad0cd02/report.md",
+      "raw_url": "https://github.com/sysprog21/minirubik/raw/231796cc48868f4ea276f652139b6bebbad0cd02/report.md",
+      "contents_url": "https://api.github.com/repos/sysprog21/minirubik/contents/report.md?ref=231796cc48868f4ea276f652139b6bebbad0cd02",
+      "patch": "@@ -153,11 +153,12 @@ Every generator turn preserves the total twist modulo 3: every turn leaves $\\sum\n This section indexes cubies by the internal indices 0 through 6, and $o_i$ keeps the meaning fixed in section 2: the internal orientation `state_t.o[i]`. A physical state is valid if and only if it satisfies two invariants:\n \n 1. Permutation validity: the seven entries of `state_t.p` form a bijection of the internal cubie indices $\\{0, 1, 2, 3, 4, 5, 6\\}$, which are the report's cubies 1 through 7 shifted down by one.\n+\n 2. Orientation constraint: every internal orientation $o_i \\in \\{0, 1, 2\\}$, and the sum across all cubies is divisible by 3:\n \n-$$\n-\\sum_{i=0}^6 o_i \\equiv 0 \\pmod 3\n-$$\n+   $$\n+   \\sum_{i=0}^6 o_i \\equiv 0 \\pmod 3\n+   $$\n \n Because the orientation sum is constrained modulo 3, the orientation of the 7th cubie is uniquely determined by the first 6:\n \n@@ -169,25 +170,19 @@ $$\n \n The state is encoded into a dense integer in the range $[0, 3{,}674{,}160)$ using two rank components:\n \n-1. Permutation Lehmer rank ($p \\in [0, 7!)$), computed with the factoradic numeral system:\n+1. Permutation Lehmer rank ($`p \\in [0, 7!)`$), computed with the factoradic numeral system:\n \n-   $$\n-   p = \\sum_{i=0}^6 c_i \\times (6 - i)!, \\quad c_i = \\sum_{j=i+1}^6 [s.p[j] < s.p[i]]\n-   $$\n+   $$p = \\sum_{i=0}^6 c_i \\times (6 - i)!, \\quad c_i = \\sum_{j=i+1}^6 [s.p[j] < s.p[i]]$$\n \n    `rank_state` evaluates this by Horner's rule, `p = p * (7 - i) + c_i`, which needs no factorial table and keeps every partial value below 5,040.\n \n-2. Orientation rank ($o \\in [0, 3^6)$), evaluated as a base-3 integer over the first 6 orientations:\n+2. Orientation rank ($`o \\in [0, 3^6)`$), evaluated as a base-3 integer over the first 6 orientations:\n \n-   $$\n-   o = \\sum_{i=0}^5 s.o[i] \\times 3^{5 - i}\n-   $$\n+   $$o = \\sum_{i=0}^5 s.o[i] \\times 3^{5 - i}$$\n \n 3. Composite rank:\n \n-   $$\n-   \\text{rank} = p \\times 729 + o\n-   $$\n+   $$\\text{rank} = p \\times 729 + o$$\n \n This encoding is a bijection between valid physical configurations and array indices in $[0, 3{,}674{,}160)$. Valmari [3] treats this same puzzle as a case study in how far a dense encoding can shrink the table, and reaches the same conclusion that the orientation of the last cubie is redundant. `unrank_state` inverts it: it peels factoradic digits off $p$ against a shrinking list of unused cubies, reads the six base-3 digits of $o$, and recomputes the seventh orientation from the parity constraint. The executable self-test checks the round trip on every one of the 3,674,160 ranks.\n "
+    }
+  ]
+}

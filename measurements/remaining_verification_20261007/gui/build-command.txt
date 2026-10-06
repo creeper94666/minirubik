@@ -1,0 +1,3 @@
+AI-executed
+python3 tools/build_solver7_optimization_led.py --render 1 --base 0xf0000000 --output measurements/remaining_verification_20261007/gui/solver7_gui
+cmp solver7_optimization_led.s measurements/remaining_verification_20261007/gui/solver7_gui.s

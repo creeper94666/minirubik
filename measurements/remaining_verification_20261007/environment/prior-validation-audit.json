@@ -1,0 +1,24 @@
+{
+  "solver7_optimization.s": {
+    "current_sha256": "c39d95a777044120b66320dd85668ea4dd3aeba52f83879b7554f73b05ccfef6",
+    "snapshot_sha256": "c39d95a777044120b66320dd85668ea4dd3aeba52f83879b7554f73b05ccfef6",
+    "equal": true
+  },
+  "solver7_optimization.elf": {
+    "current_sha256": "e0e34f1535ce81b015331c3c798fca0348f16c93dbe94ee5b725858329f1c120",
+    "snapshot_sha256": "e0e34f1535ce81b015331c3c798fca0348f16c93dbe94ee5b725858329f1c120",
+    "equal": true
+  },
+  "solver7_search_sequences.inc": {
+    "current_sha256": "f64c17bc7542d9f2a91b5404b48a7131a6262430095c84014482767f3b16b960",
+    "snapshot_sha256": "f64c17bc7542d9f2a91b5404b48a7131a6262430095c84014482767f3b16b960",
+    "equal": true
+  },
+  "solver7.ld": {
+    "current_sha256": "cf66e634254d2db435cdd31aeacfcb0359bcfe242e9a2a4b3a2cad191cd28124",
+    "snapshot_sha256": "cf66e634254d2db435cdd31aeacfcb0359bcfe242e9a2a4b3a2cad191cd28124",
+    "equal": true
+  },
+  "allocated_bytes_equal": true,
+  "host_source_matches_H3": true
+}

@@ -1,0 +1,118 @@
+Browser tab: 1454524979, Title: "Assignment 1: Optimizations and RISC-V Assembly - HackMD", URL: "https://hackmd.io/qtmRCStHRkOGkX3KbAyLMA".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~			15 link Description: 協助, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					38 link Description: Assignment-1-Optimizations-and-RISC-V-Assembly, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					41 link Description: Environment-and-Reproducibility, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					61 link Description: Stage-1-—-Characterizing-the-Baseline, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					75 link Description: Baseline-Representation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					103 link Description: Mathematical-Foundations, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					106 link Description: The-Group-Generated-by-R-B-and-D, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					116 link Description: Corner-Orientation-Invariant, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					128 link Description: State-Space-Size, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					137 link Description: Generators-and-the-Half-Turn-Metric, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					144 link Description: The-Cayley-Graph, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					151 link Description: Why-Exhaustive-BFS-Establishes-Diameter-11, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					173 link Description: Connection-to-the-Baseline-Solver, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					179 link Description: Baseline-Target-Cost, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					184 link Description: Stage-1-Measurements-—-2026-10-07, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					483 link Description: Baseline-Allocation-Audit, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					526 link Description: Stage-2-—-Representation-and-Search-Algorithm, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					529 link Description: Iterative-IDA-Search, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					551 link Description: Search-tree-pruning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					559 link Description: First-Heuristic-Incorrect-Cubies, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					571 link Description: Permutation-and-Orientation-Pattern-Databases, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					606 link Description: State-Representation-and-Search-Correctness, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					609 link Description: Choice-of-State-Representation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					615 link Description: Termination, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					620 link Description: Admissibility-of-the-Pattern-Database-Heuristic, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					629 link Description: Optimality-of-Iterative-Deepening, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					635 link Description: Additional-Search-Pruning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					638 link Description: Inverse-Orientation-Lower-Bound, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					651 link Description: Canonical-Move-Suffix-Pruning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					656 link Description: Why-Canonical-Pruning-Preserves-an-Optimal-Solution, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					661 link Description: Table-Layout-and-Cached-Masks, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					668 link Description: Recorded-Effect-on-Search-Work, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					741 link Description: Correctness-Verification-on-the-Host, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					765 link Description: Stage-3-—-Improving-the-C-Implementation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					769 link Description: Removing-Expensive-Integer-Operations, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					785 link Description: Standalone-RV32I-Compatible-C-Runtime-—-solver3, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					800 link Description: Profiling-solver3, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					838 link Description: solver4-—-Pointer-Based-Moves-and-Direct-Rotations, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					853 link Description: Why-I-selected-this-optimization, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					858 link Description: Profiling-solver4, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					889 link Description: solver5-—-Precomputed-Abstract-Transition-Tables, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					923 link Description: solver6-—-Direct-State-to-Heuristic-Lookup, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					948 link Description: solver7-—-Removing-the-Incorrect-Cubie-Lower-Bound, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					981 link Description: Stage-4-—-RV32I-Assembly-Optimization, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					984 link Description: Direct-Expansion-of-the-Nine-Moves, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					994 link Description: Assembly-reasoning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					999 link Description: Horner-Form-Heuristic-Indexing, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1021 link Description: Final-Solver-Profile, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1074 link Description: GCC-reference-build, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1108 link Description: Worst-Case-Distance-11-Performance, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1120 link Description: Target-Correctness-Tests, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1174 link Description: LED-Matrix-Visualization, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1177 link Description: Cube-State-to-Facelets, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1187 link Description: 35×25-Mapping, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1206 link Description: Final-Assembly-GUI-Verification-—-2026-10-07, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1214 link Description: Renderer-Validation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1223 link Description: Replay-Loop, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1237 link Description: Renderer-Build-vs-Measurement-Build, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1246 link Description: Ripes-Pipeline-Walkthrough, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1249 link Description: Verified-Binary-and-Expected-Behavior, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1291 link Description: Live-Observation-Status-and-Procedure, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1299 link Description: Optimization-Summary, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1364 link Description: Development-Process-Reflection, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1370 link Description: AI-Assistance-Disclosure, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1376 link Description: References, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1381 link Description: Verification-Evidence-and-Fork-Provenance-—-2026-10-07, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1386 link Description: Upstream-Fork-Audit, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~					1427 link Description: Reuse-of-Existing-Verification, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA
+~			1436 link Description: Assignment 1: Optimizations and RISC-V Assembly, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Assignment-1-Optimizations-and-RISC-V-Assembly
+~			1437 link Description: Environment and Reproducibility, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Environment-and-Reproducibility
+~			1438 link Description: Stage 1 — Characterizing the Baseline, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Stage-1-—-Characterizing-the-Baseline
+~			1439 link Description: Baseline Representation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Baseline-Representation
+~			1440 link Description: Mathematical Foundations, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Mathematical-Foundations
+~			1441 link Description: The Group Generated by R, B, and D, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-The-Group-Generated-by-R-B-and-D
+~			1442 link Description: Corner Orientation Invariant, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Corner-Orientation-Invariant
+~			1443 link Description: State-Space Size, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-State-Space-Size
+~			1444 link Description: Generators and the Half-Turn Metric, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Generators-and-the-Half-Turn-Metric
+~			1445 link Description: The Cayley Graph, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-The-Cayley-Graph
+~			1446 link Description: Why Exhaustive BFS Establishes Diameter 11, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Why-Exhaustive-BFS-Establishes-Diameter-11
+~			1447 link Description: Connection to the Baseline Solver, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Connection-to-the-Baseline-Solver
+~			1448 link Description: Baseline Target Cost, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Baseline-Target-Cost
+~			1449 link Description: Stage 1 Measurements — 2026-10-07, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Stage-1-Measurements-—-2026-10-07
+~			1450 link Description: Baseline Allocation Audit, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Baseline-Allocation-Audit
+~			1451 link Description: Stage 2 — Representation and Search Algorithm, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Stage-2-—-Representation-and-Search-Algorithm
+~			1452 link Description: Iterative IDA* Search, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Iterative-IDA-Search
+~			1453 link Description: Search-tree pruning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Search-tree-pruning
+~			1454 link Description: First Heuristic: Incorrect Cubies, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-First-Heuristic-Incorrect-Cubies
+~			1455 link Description: Permutation and Orientation Pattern Databases, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Permutation-and-Orientation-Pattern-Databases
+~			1456 link Description: State Representation and Search Correctness, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-State-Representation-and-Search-Correctness
+~			1457 link Description: Choice of State Representation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Choice-of-State-Representation
+~			1458 link Description: Termination, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Termination
+~			1459 link Description: Admissibility of the Pattern-Database Heuristic, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Admissibility-of-the-Pattern-Database-Heuristic
+~			1460 link Description: Optimality of Iterative Deepening, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Optimality-of-Iterative-Deepening
+~			1461 link Description: Additional Search Pruning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Additional-Search-Pruning
+~			1462 link Description: Inverse-Orientation Lower Bound, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Inverse-Orientation-Lower-Bound
+~			1463 link Description: Canonical Move-Suffix Pruning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Canonical-Move-Suffix-Pruning
+~			1464 link Description: Why Canonical Pruning Preserves an Optimal Solution, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Why-Canonical-Pruning-Preserves-an-Optimal-Solution
+~			1465 link Description: Table Layout and Cached Masks, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Table-Layout-and-Cached-Masks
+~			1466 link Description: Recorded Effect on Search Work, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Recorded-Effect-on-Search-Work
+~			1467 link Description: Correctness Verification on the Host, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Correctness-Verification-on-the-Host
+~			1468 link Description: Stage 3 — Improving the C Implementation, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Stage-3-—-Improving-the-C-Implementation
+~			1469 link Description: Removing Expensive Integer Operations, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Removing-Expensive-Integer-Operations
+~			1470 link Description: Standalone RV32I-Compatible C Runtime — solver3, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Standalone-RV32I-Compatible-C-Runtime-—-solver3
+~			1471 link Description: Profiling solver3, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Profiling-solver3
+~			1472 link Description: solver4 — Pointer-Based Moves and Direct Rotations, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-solver4-—-Pointer-Based-Moves-and-Direct-Rotations
+~			1473 link Description: Why I selected this optimization, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Why-I-selected-this-optimization
+~			1474 link Description: Profiling solver4, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Profiling-solver4
+~			1475 link Description: solver5 — Precomputed Abstract Transition Tables, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-solver5-—-Precomputed-Abstract-Transition-Tables
+~			1476 link Description: solver6 — Direct State-to-Heuristic Lookup, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-solver6-—-Direct-State-to-Heuristic-Lookup
+~			1477 link Description: solver7 — Removing the Incorrect-Cubie Lower Bound, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-solver7-—-Removing-the-Incorrect-Cubie-Lower-Bound
+~			1478 link Description: Stage 4 — RV32I Assembly Optimization, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Stage-4-—-RV32I-Assembly-Optimization
+~			1479 link Description: Direct Expansion of the Nine Moves, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Direct-Expansion-of-the-Nine-Moves
+~			1480 link Description: Assembly reasoning, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Assembly-reasoning
+~			1481 link Description: Horner-Form Heuristic Indexing, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Horner-Form-Heuristic-Indexing
+~			1482 link Description: Final Solver Profile, Value: hackmd.io/qtmRCStHRkOGkX3KbAyLMA, ID: toc-item-Final-Solver-Profile
+The focused UI element is 0 AXWebArea Assignment 1: Optimizations and RISC-V Assembly - HackMD, URL: hackmd.io/qtmRCStHRkOGkX3KbAyLMA

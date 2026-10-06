@@ -1,0 +1,3 @@
+The following is a diff from the previous accessibility tree for Window: "Ripes" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~			59 text Value: Epoch: 1791303176314860000 ns 2026-10-07 00:12:56.314, Secondary Actions: Raise, ID: QApplication.Ripes__MainWindow.centralwidget.QStackedWidget.Ripes__IOTab.splitter.gridLayoutWidget.mdiArea.QWidget.QMdiSubWindow.QMainWindow.QDockWidget.Ripes::IOClock.QLabel
+The focused UI element is 0 標準視窗 Ripes, Secondary Actions: Raise

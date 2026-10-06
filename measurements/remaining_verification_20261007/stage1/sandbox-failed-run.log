@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<PROJECT>/measurements/remaining_verification_20261007/stage1/tools/measure_stage1.py", line 27, in <module>
+    assert r.returncode==0 and 'Program exited with code: 0' in log.read_text()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

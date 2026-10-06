@@ -1,0 +1,1 @@
+states=3674160 state_bytes=14 move_table=3674160 queue=14696640 transitions=34614 dominant_live_payload=18405414

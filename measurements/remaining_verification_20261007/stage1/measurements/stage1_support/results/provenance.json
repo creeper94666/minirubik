@@ -1,0 +1,5 @@
+{
+  "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4",
+  "compiler": "riscv64-elf-gcc (GCC) 16.2.0\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "scope": "AI-executed support measurement; process wall time includes startup and output. Memory slope requires paired region comparison for each model. Student independent runs and interpretation remain required."
+}
