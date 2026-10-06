@@ -1,5 +1,8 @@
 # minirubik — RV32I coursework
 
+[Current files](#current-rv32i-version) · [Three target tests](#three-target-tests) ·
+[H1–H4 / T5–T7](#correctness-gates) · [Performance and memory](#performance-and-memory)
+
 ## Current RV32I version
 
 **Start with the files below. `solver7.c` and `solver7.s` are older baselines;
@@ -31,6 +34,88 @@ and distance-11 cases also pass on RV32_5S. See [validation evidence](measuremen
 Development code and records include disclosed AI assistance. See
 [submission status](docs/submission-status.md) for remaining student-owned work
 and GUI observations; these results do not mean the entire assignment is complete.
+
+## Assignment verification results
+
+The results below apply to the **current version**, with rendering disabled.
+They are AI-executed development measurements; independent student measurements
+and analysis remain required. Links lead directly to the supporting records.
+
+### Three target tests
+
+All three return the expected shortest length and pass independent solution replay
+on both processors, with no ISA extensions enabled.
+
+| Test | Input | Optimal moves | RV32_ISS retired instructions | RV32_5S retired instructions |
+| --- | --- | ---: | ---: | ---: |
+| Solved | `12345671111111` | 0 | [424](measurements/solver7_submission_validation/models/RV32_ISS-12345671111111.json) | [423](measurements/solver7_submission_validation/models/RV32_5S-12345671111111.json) |
+| One move | `25314672313211` | 1 | [1,236](measurements/solver7_submission_validation/models/RV32_ISS-25314672313211.json) | [1,235](measurements/solver7_submission_validation/models/RV32_5S-25314672313211.json) |
+| Distance 11 | `21345671111111` | 11 | [15,147,934](measurements/solver7_submission_validation/models/RV32_ISS-21345671111111.json) | [15,147,933](measurements/solver7_submission_validation/models/RV32_5S-21345671111111.json) |
+
+For **`21345671111111`**, the returned 11-move solution is:
+
+```text
+R B' D2 R' B R' B' R D2 R B
+```
+
+Counts differ by one between models; each measured count is reported without
+adjustment. [All six results](measurements/solver7_submission_validation/models/summary.json)
+and [raw logs / instruction reports](measurements/solver7_submission_validation/models/)
+are retained.
+
+### Correctness gates
+
+| Gate | Result and coverage | Evidence |
+| --- | --- | --- |
+| H1 — admissible heuristic | PASS for all 3,674,160 states against exact BFS distances | [H1/H2 summary](measurements/solver7_search/full/host/oracle-summary.json) |
+| H2 — distance tables | PASS: legal/unused slots, solved entries and maxima checked; permutation maximum 7, orientation maximum 6 | [H1/H2 summary](measurements/solver7_search/full/host/oracle-summary.json) |
+| H3 — optimal search | PASS for all 3,674,160 C states, with optimal lengths and independent replay; 415.31 s using four workers | [H3 summary](measurements/solver7_search/full/host/summary.json), [reproduction commands](measurements/solver7_search/README.md) |
+| H4 — packed accessors | No nibble-packed distance table is used. Canonical move masks are separately checked over 8,080 contexts | [Applicability](docs/submission-status.md#validation-evidence), [mask test](tests/solver7_search_assembly_test.py) |
+| T5 — target replay | PASS for all 2,644 distance-11 assembly runs and the three model-test inputs | [Per-input results](measurements/solver7_submission_validation/ripes/results.csv), [model results](measurements/solver7_submission_validation/models/summary.json) |
+| T6 — specified input | PASS: `21345671111111` returns 11 moves and replays to solved | [Specified-input result](measurements/solver7_submission_validation/models/RV32_ISS-21345671111111.json) |
+| T7 — processor models | All three selected inputs PASS on RV32_ISS and RV32_5S; unseen grader inputs are not claimed as already tested | [Six model tests](measurements/solver7_submission_validation/models/summary.json), [runner](tools/validate_submission_models.py) |
+
+H3 exhaustively validates the **C search**. The assembly evidence covers all
+2,644 distance-11 states and the listed model cases, not every legal assembly input.
+A CLI pipeline run does not replace the required personal GUI signal walkthrough
+or live LED demonstration; those remain outstanding.
+
+### Performance and memory
+
+Counts include startup, search, internal replay, output and exit on the pinned
+RV32_ISS build. Static data means `.rodata + .data + .bss`; code size means linked
+`.text`, with the renderer compiled out.
+
+| Metric | Required limit | Current optimized assembly |
+| --- | ---: | ---: |
+| Worst case over all 2,644 distance-11 inputs | ≤ 50,000,000 retired instructions | **38,543,830 — PASS; 0 inputs above the limit |
+| Worst-case input | — | `54721631111111` |
+| Specified input `21345671111111` | Report separately | **15,147,934** retired instructions |
+| `.rodata` | — | 126,060 bytes |
+| `.data` | — | 15 bytes |
+| `.bss` | — | 4 bytes |
+| **Total static data** | **≤ 131,072 bytes (128 KiB)** | **126,079 bytes — PASS** |
+| Linked `.text` | Compare with final C | 4,296 bytes |
+| Reserved stack, separate from static-data total | Report working memory | 4,096 bytes |
+
+| Final C vs assembly, same inputs/build conventions | C, GCC `-O2` | Optimized assembly |
+| --- | ---: | ---: |
+| `21345671111111` retired instructions | 31,343,837 | 15,147,934 |
+| `54721631111111` retired instructions | 79,635,246 | 38,543,830 |
+| Linked `.text` | 2,752 bytes | 4,296 bytes |
+| Static data | 126,088 bytes | 126,079 bytes |
+
+The assembly executes fewer instructions but uses more code bytes; specialized
+move bodies and indexing trade code size for execution cost.
+
+Evidence: [full sweep summary](measurements/solver7_submission_validation/ripes/summary.json),
+[all 2,644 counts and paths](measurements/solver7_submission_validation/ripes/results.csv),
+[C comparison](solver7_search_README.md),
+[compiler / Ripes build](measurements/solver7_submission_validation/environment.json),
+[source / binary fingerprints](measurements/solver7_submission_validation/fingerprints.json).
+
+Other required measurements: [Stage 1 memory/rate reproduction aid and qualified pilot results](measurements/stage1_support/README.md)
+and [step-by-step assembly optimization measurements](measurements/solver7_pruning/README.md).
 
 ## Historical files — retained for comparison
 
