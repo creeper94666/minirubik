@@ -78,7 +78,7 @@ are retained.
 H3 exhaustively validates the **C search**. The assembly evidence covers all
 2,644 distance-11 states and the listed model cases, not every legal assembly input.
 A CLI pipeline run does not replace the required personal GUI signal walkthrough
-or live LED demonstration; those remain outstanding.
+or live LED demonstration. [Actual GUI captures](docs/ripes-gui-observations.md) now document five occupied stages, a store write-enable, a control-hazard flush, and intermediate/solved LED states. Initial-state capture, consecutive-move verification, forwarding, a load-use stall, and before/after memory contents remain outstanding.
 
 ### Performance and memory
 
@@ -114,7 +114,7 @@ Evidence: [full sweep summary](measurements/solver7_submission_validation/ripes/
 [compiler / Ripes build](measurements/solver7_submission_validation/environment.json),
 [source / binary fingerprints](measurements/solver7_submission_validation/fingerprints.json).
 
-New 2026-10-07 evidence: [12 Stage 1 samples, methods and limitations](docs/remaining-verification-results.md), [current report corrections and upstream section-7 critique](docs/report-final-review.md). Final LED replay and pipeline signal observations remain unconfirmed; see the [authorized GUI attempt](measurements/gui_followup_20261007/gui/attempt-log.md).
+New 2026-10-07 evidence: [12 Stage 1 samples, methods and limitations](docs/remaining-verification-results.md), [current report corrections and upstream section-7 critique](docs/report-final-review.md). New 2026-10-08 [actual GUI evidence](docs/ripes-gui-observations.md) includes six screenshots of pipeline stages, store enable, flush, and intermediate/solved LED output. The linked page lists remaining observations; the earlier [GUI attempt log](measurements/gui_followup_20261007/gui/attempt-log.md) is historical.
 
 Other required measurements: [Stage 1 memory/rate reproduction aid and qualified pilot results](measurements/stage1_support/README.md)
 and [step-by-step assembly optimization measurements](measurements/solver7_pruning/README.md).
