@@ -129,7 +129,17 @@ frame sequence or pipeline signal PASS is claimed. See the
 
 The [report review](report-final-review.md) supplies current quantitative sections,
 labels obsolete Horner results as historical, and includes a specific upstream
-report.md section-7 critique for student review. Local corrections do not establish
-that the live HackMD was updated. Publication was explicitly authorized on 2026-10-07. Real substantive revision history,
+report.md section-7 critique for student review. The corrected report was subsequently saved to the live HackMD in Safari. Publication was explicitly authorized on 2026-10-07. Real substantive revision history,
 permissions and accepted confirmation still require verification. See
+[publication status](publication-status-20261007.md).
+
+## Latest submission checkpoint
+
+The remote tag `hw1-phase1-2026-10-07` points to
+`a7435561f9771b2004abae6124c1151929da4aec`. HackMD revision
+`dcc7d294-06bb-46f9-b412-631fd841165f` contains the revised report.
+The first form submission returned **action required** (2026-10-07 10:41
+Asia/Taipei): public email, formal HackMD publication, and custom permalink.
+Public email has since been fixed with explicit user authorization; publication,
+permalink and a successful resubmission remain pending. See the updated
 [publication status](publication-status-20261007.md).
