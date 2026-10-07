@@ -1,0 +1,61 @@
+{
+  "status": "complete consecutive GUI LED sequence; pipeline observations in docs/ripes-gui-observations.md",
+  "files": {
+    "solver7_gui.elf": {
+      "bytes": 140468,
+      "sha256": "8655b79a8658ca9447155a10d39273a5534384bf1fee103e1130fdaa26c8353f"
+    },
+    "solver7_optimization_led.elf": {
+      "bytes": 139704,
+      "sha256": "9cf031504897e541e37f875217c3d3ac00406cdd3f70745b76e86a76bfec1edd"
+    },
+    "docs/images/ripes-gui/led-step-00.png": {
+      "bytes": 129896,
+      "sha256": "8a21be838e37e772cc933998f8a9aa8afc5b7066339b64afdef2ddbe2bd1339b"
+    },
+    "docs/images/ripes-gui/led-step-01.png": {
+      "bytes": 131560,
+      "sha256": "62bb8455641987139e47b69027dccecdd2cc91002559569ed93a7a41518b1d72"
+    },
+    "docs/images/ripes-gui/led-step-02.png": {
+      "bytes": 131751,
+      "sha256": "5fb81b1c3c3a45baaf1a3954c7d62a069cfc6229bf1ccb7ad34f686cae0b65c0"
+    },
+    "docs/images/ripes-gui/led-step-03.png": {
+      "bytes": 131754,
+      "sha256": "319c14334cde97f3f22519635472e53a62a66110633474faac6907d152ce3886"
+    },
+    "docs/images/ripes-gui/led-step-04.png": {
+      "bytes": 131754,
+      "sha256": "05936ca761a8e2cbdd4b29117363c75a3e40bb6c1f5a73d6dd0b662af8d00801"
+    },
+    "docs/images/ripes-gui/led-step-05.png": {
+      "bytes": 131803,
+      "sha256": "dcd99f1d5cb35960add9036a1a7ecead146eafb8c1a315e9b3a84645e1584e98"
+    },
+    "docs/images/ripes-gui/led-step-06.png": {
+      "bytes": 131898,
+      "sha256": "32df62b7554723cff2a1d5f739bec7dbacb8e614398a04e5f9164498a6198f2f"
+    },
+    "docs/images/ripes-gui/led-step-07.png": {
+      "bytes": 131831,
+      "sha256": "d24319e23a4fa01a381de42755a27ef2c1e373114d56d83b78c739e528f48a92"
+    },
+    "docs/images/ripes-gui/led-step-08.png": {
+      "bytes": 131833,
+      "sha256": "e2f0b2a758677b1898e929c506b23735e6a945361a9ecfa953773d954863e3ed"
+    },
+    "docs/images/ripes-gui/led-step-09.png": {
+      "bytes": 131766,
+      "sha256": "61bd541758d21ae6bfb485d29a6959f0e25b481eceaec346fd0949b4f1dd7960"
+    },
+    "docs/images/ripes-gui/led-step-10.png": {
+      "bytes": 131299,
+      "sha256": "c189b92502efd69b26a0d16d9d49c9faa43d5feb3110afcfd08aee287940a344"
+    },
+    "docs/images/ripes-gui/led-step-11.png": {
+      "bytes": 130905,
+      "sha256": "9a291a4eca09fa8b548a8dd9ed570be574aeec7c296efd963643a3b4bfb74516"
+    }
+  }
+}

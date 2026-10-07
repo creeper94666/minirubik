@@ -78,7 +78,7 @@ are retained.
 H3 exhaustively validates the **C search**. The assembly evidence covers all
 2,644 distance-11 states and the listed model cases, not every legal assembly input.
 A CLI pipeline run does not replace the required personal GUI signal walkthrough
-or live LED demonstration. [Actual GUI captures](docs/ripes-gui-observations.md) now document five occupied stages, a store write-enable, a control-hazard flush, and intermediate/solved LED states. Additional captures now show forwarding and a load-use stall. Before/after stack-memory captures now show the return-address store. Initial-state capture and consecutive-move LED verification remain outstanding.
+or live LED demonstration. [Actual GUI captures](docs/ripes-gui-observations.md) now document five occupied stages, a store write-enable, a control-hazard flush, and intermediate/solved LED states. Additional captures now show forwarding and a load-use stall. Before/after stack-memory captures show the return-address store. The final GUI ELF has now been captured at every redraw breakpoint: initial state plus all 11 moves, with all 12 frames matching the expected 24 facelets and ending solved.
 
 ### Performance and memory
 
@@ -114,7 +114,7 @@ Evidence: [full sweep summary](measurements/solver7_submission_validation/ripes/
 [compiler / Ripes build](measurements/solver7_submission_validation/environment.json),
 [source / binary fingerprints](measurements/solver7_submission_validation/fingerprints.json).
 
-New 2026-10-07 evidence: [12 Stage 1 samples, methods and limitations](docs/remaining-verification-results.md), [current report corrections and upstream section-7 critique](docs/report-final-review.md). New 2026-10-08 [actual GUI evidence](docs/ripes-gui-observations.md) includes screenshots of pipeline stages, store enable, flush, forwarding, a load-use stall, and intermediate/solved LED output. The linked page lists remaining observations; the earlier [GUI attempt log](measurements/gui_followup_20261007/gui/attempt-log.md) is historical.
+New 2026-10-07 evidence: [12 Stage 1 samples, methods and limitations](docs/remaining-verification-results.md), [current report corrections and upstream section-7 critique](docs/report-final-review.md). New 2026-10-08 [actual GUI evidence](docs/ripes-gui-observations.md) includes screenshots of pipeline stages, store enable, flush, forwarding, a load-use stall, and intermediate/solved LED output. The linked page includes the complete 12-frame LED sequence and its verification record; the earlier [GUI attempt log](measurements/gui_followup_20261007/gui/attempt-log.md) is historical.
 
 Other required measurements: [Stage 1 memory/rate reproduction aid and qualified pilot results](measurements/stage1_support/README.md)
 and [step-by-step assembly optimization measurements](measurements/solver7_pruning/README.md).
