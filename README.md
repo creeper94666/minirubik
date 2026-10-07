@@ -78,7 +78,7 @@ are retained.
 H3 exhaustively validates the **C search**. The assembly evidence covers all
 2,644 distance-11 states and the listed model cases, not every legal assembly input.
 A CLI pipeline run does not replace the required personal GUI signal walkthrough
-or live LED demonstration. [Actual GUI captures](docs/ripes-gui-observations.md) now document five occupied stages, a store write-enable, a control-hazard flush, and intermediate/solved LED states. Additional captures now show forwarding and a load-use stall. Initial-state capture, consecutive-move verification, and before/after memory contents remain outstanding.
+or live LED demonstration. [Actual GUI captures](docs/ripes-gui-observations.md) now document five occupied stages, a store write-enable, a control-hazard flush, and intermediate/solved LED states. Additional captures now show forwarding and a load-use stall. Before/after stack-memory captures now show the return-address store. Initial-state capture and consecutive-move LED verification remain outstanding.
 
 ### Performance and memory
 

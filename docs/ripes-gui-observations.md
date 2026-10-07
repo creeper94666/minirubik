@@ -22,7 +22,7 @@ At cycle 12, after `jal x0, -12` at `0x24`, IF has returned to `0x18`; ID and EX
 
 ## Remaining evidence
 
-Before/after memory contents and the initial LED GUI capture plus consecutive-move verification remain incomplete. Forwarding and load-use-stall captures are included below. Intermediate and solved LED captures are included below. This page does not claim completion of the GUI requirements.
+The initial LED GUI capture and consecutive-move verification remain incomplete. The stack-store before/after captures are included below. Forwarding and load-use-stall captures are included below. Intermediate and solved LED captures are included below. This page does not claim completion of the GUI requirements.
 
 ## Actual LED GUI playback
 
@@ -51,3 +51,11 @@ At cycle 50, `lbu x14,0(x14)` (`0xcb8`) is in EX and `beq x14,x0,64` (`0xcbc`) i
 ![Progress resumes at cycle 52](images/ripes-gui/pipeline-cycle-52-resume.png)
 
 At cycle 52, the load is in WB, the branch has advanced to EX, and a red `nop (stall)` bubble is visible in MEM. This is direct evidence of the inserted load-use bubble. The loaded input byte can now feed the branch through forwarding.
+
+## Stack write: before and after
+
+![Before the store](images/ripes-gui/stack-before-store.png)
+
+![After the store](images/ripes-gui/stack-after-store.png)
+
+Using reverse clocks from cycle 52, execution was returned to cycle 43, before the MEM-stage store took effect. One forward clock then executed `sw ra,12(sp)` at `0x10a8`. With `sp=0x2fc70`, the destination is `0x2fc7c`. The word changed from `0x00000000` to `0x00000030`; bytes are `30 00 00 00`, demonstrating little-endian storage of the return address. The memory-map panel's section sizes are Ripes display values and are not used as the static-memory accounting for the submission.
