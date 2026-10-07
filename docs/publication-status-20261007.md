@@ -78,3 +78,26 @@ This publication work does not complete live LED/pipeline observation, prove the
 original fork-creation SHA, or establish independent student authorship. Six
 HackMD revision timestamps were observed; at least three substantive changes
 still need a content-level audit rather than counting timestamps alone.
+
+## Accepted submission — 2026-10-07 11:08 Asia/Taipei
+
+The user completed formal HackMD publication. The second form submission used
+[the published custom permalink](https://hackmd.io/@creeper94666/arch2026-homework1).
+The course notification from `103b0020@gs.ncku.edu.tw` had subject
+“[Computer Architecture 2026] Assignment 1 submission: accepted” and confirmed
+that all automatic checks passed. Its recorded repository, tag and revision matched:
+
+- Repository: https://github.com/creeper94666/minirubik
+- Tag: `hw1-phase1-2026-10-07`
+- Tagged commit: `a7435561f9771b2004abae6124c1151929da4aec`
+- Revision: `dcc7d294-06bb-46f9-b412-631fd841165f`
+
+This supersedes the earlier login, publication and submission blockers above.
+The private receipt screenshots are retained locally at
+`measurements/safari_publication_20261007/form-resubmitted.png` and `accepted.png`;
+they are not uploaded with unrelated mailbox information.
+
+**Accepted means automatic submission checks passed, not that all coursework
+requirements or grading criteria were satisfied.** Live LED and pipeline evidence,
+exact fork-creation provenance, content-level revision audit and independent
+student authorship limitations remain as documented. This follow-up is AI-executed.
