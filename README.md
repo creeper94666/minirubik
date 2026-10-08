@@ -3,6 +3,12 @@
 [Current files](#current-rv32i-version) · [Three target tests](#three-target-tests) ·
 [H1–H4 / T5–T7](#correctness-gates) · [Performance and memory](#performance-and-memory)
 
+## Report and submission snapshot
+
+[Completed English report](docs/hackmd-final-report.md) · [Four evidence-based analysis sections](docs/hackmd-four-sections.md)
+
+The selected source/evidence snapshot is `15b486ae9c5496b6ca15bef62715eb6287765531`, including the complete GUI observations. The replacement tag name is `hw1-phase1-2026-10-08-final`; it has been created locally, but remote publication is pending GitHub authentication. The historical `hw1-phase1-2026-10-07` tag does not include the later GUI evidence. The report draft must still be saved to HackMD and the submission form updated to the replacement tag and report revision after publication.
+
 ## Current RV32I version
 
 **Start with the files below. `solver7.c` and `solver7.s` are older baselines;
