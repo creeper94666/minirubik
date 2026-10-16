@@ -1,0 +1,1597 @@
+{
+  "cases": [
+    {
+      "input": "12345671111111",
+      "expected": {
+        "distance": 0
+      },
+      "path": [],
+      "instructions": 424,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12345671111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12345671111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "25314672313211",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "R'"
+      ],
+      "instructions": 1218,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/25314672313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/25314672313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "54321671111111",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "R2"
+      ],
+      "instructions": 1120,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/54321671111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/54321671111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "41352672313211",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "R"
+      ],
+      "instructions": 1065,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41352672313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41352672313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12356741112323",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "B'"
+      ],
+      "instructions": 1499,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12356741112323.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12356741112323-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12367451111111",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "B2"
+      ],
+      "instructions": 1393,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12367451111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12367451111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12374561112323",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "B"
+      ],
+      "instructions": 1334,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12374561112323.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12374561112323-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "13642571111111",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "D'"
+      ],
+      "instructions": 1690,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/13642571111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/13642571111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "16543271111111",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "D2"
+      ],
+      "instructions": 1610,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/16543271111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/16543271111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "15246371111111",
+      "expected": {
+        "distance": 1
+      },
+      "path": [
+        "D"
+      ],
+      "instructions": 1526,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/15246371111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/15246371111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "54721631111111",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 95558619,
+        "baseline_path": [
+          "B2",
+          "R'",
+          "B",
+          "R'",
+          "D'",
+          "B",
+          "R2",
+          "B",
+          "R",
+          "B",
+          "D'"
+        ]
+      },
+      "path": [
+        "B2",
+        "R'",
+        "B",
+        "R'",
+        "D'",
+        "B",
+        "R2",
+        "B",
+        "R",
+        "B",
+        "D'"
+      ],
+      "instructions": 38398165,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/54721631111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/54721631111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "14325671111111",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 93937156,
+        "baseline_path": [
+          "B2",
+          "R'",
+          "B",
+          "R",
+          "D",
+          "B2",
+          "D",
+          "R'",
+          "B'",
+          "R",
+          "D'"
+        ]
+      },
+      "path": [
+        "B2",
+        "R'",
+        "B",
+        "R",
+        "D",
+        "B2",
+        "D",
+        "R'",
+        "B'",
+        "R",
+        "D'"
+      ],
+      "instructions": 38106953,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/14325671111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/14325671111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "41752632313211",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 91649526,
+        "baseline_path": [
+          "B2",
+          "R",
+          "B'",
+          "R",
+          "D",
+          "R2",
+          "B'",
+          "R",
+          "B",
+          "D2",
+          "B'"
+        ]
+      },
+      "path": [
+        "B2",
+        "R",
+        "B'",
+        "R",
+        "D",
+        "R2",
+        "B'",
+        "R",
+        "B",
+        "D2",
+        "B'"
+      ],
+      "instructions": 37021775,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41752632313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41752632313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "21354672313211",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 90678199,
+        "baseline_path": [
+          "B2",
+          "R",
+          "B'",
+          "D",
+          "R",
+          "D2",
+          "B'",
+          "R",
+          "D",
+          "R2",
+          "D'"
+        ]
+      },
+      "path": [
+        "B2",
+        "R",
+        "B'",
+        "D",
+        "R",
+        "D2",
+        "B'",
+        "R",
+        "D",
+        "R2",
+        "D'"
+      ],
+      "instructions": 36882242,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/21354672313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/21354672313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12745631111111",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 80903141,
+        "baseline_path": [
+          "B",
+          "R'",
+          "B",
+          "R",
+          "B'",
+          "D2",
+          "B'",
+          "R'",
+          "B'",
+          "R",
+          "D2"
+        ]
+      },
+      "path": [
+        "B",
+        "R'",
+        "B",
+        "R",
+        "B'",
+        "D2",
+        "B'",
+        "R'",
+        "B'",
+        "R",
+        "D2"
+      ],
+      "instructions": 32596982,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12745631111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12745631111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "52341671111111",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 80330469,
+        "baseline_path": [
+          "B",
+          "R'",
+          "B2",
+          "R'",
+          "D'",
+          "B'",
+          "R",
+          "D2",
+          "B",
+          "R'",
+          "D"
+        ]
+      },
+      "path": [
+        "B",
+        "R'",
+        "B2",
+        "R'",
+        "D'",
+        "B'",
+        "R",
+        "D2",
+        "B",
+        "R'",
+        "D"
+      ],
+      "instructions": 32637146,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/52341671111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/52341671111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "25714632313211",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 80009577,
+        "baseline_path": [
+          "B",
+          "R2",
+          "B'",
+          "D'",
+          "B",
+          "D2",
+          "R'",
+          "B'",
+          "D",
+          "R'",
+          "B2"
+        ]
+      },
+      "path": [
+        "B",
+        "R2",
+        "B'",
+        "D'",
+        "B",
+        "D2",
+        "R'",
+        "B'",
+        "D",
+        "R'",
+        "B2"
+      ],
+      "instructions": 32191563,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/25714632313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/25714632313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "45312672313211",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 78552027,
+        "baseline_path": [
+          "B",
+          "R2",
+          "B'",
+          "R'",
+          "D",
+          "R2",
+          "B'",
+          "D'",
+          "B",
+          "R'",
+          "D2"
+        ]
+      },
+      "path": [
+        "B",
+        "R2",
+        "B'",
+        "R'",
+        "D",
+        "R2",
+        "B'",
+        "D'",
+        "B",
+        "R'",
+        "D2"
+      ],
+      "instructions": 31839428,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/45312672313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/45312672313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "41625372313211",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 77147372,
+        "baseline_path": [
+          "R'",
+          "D",
+          "R'",
+          "B",
+          "D",
+          "B2",
+          "R'",
+          "D",
+          "B",
+          "D2",
+          "B'"
+        ]
+      },
+      "path": [
+        "R'",
+        "D",
+        "R'",
+        "B",
+        "D",
+        "B2",
+        "R'",
+        "D",
+        "B",
+        "D2",
+        "B'"
+      ],
+      "instructions": 29608041,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41625372313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41625372313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "47265312313211",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 77023941,
+        "baseline_path": [
+          "R'",
+          "D",
+          "R'",
+          "D",
+          "B",
+          "D2",
+          "R'",
+          "D",
+          "R",
+          "B2",
+          "R'"
+        ]
+      },
+      "path": [
+        "R'",
+        "D",
+        "R'",
+        "D",
+        "B",
+        "D2",
+        "R'",
+        "D",
+        "R",
+        "B2",
+        "R'"
+      ],
+      "instructions": 29765940,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/47265312313211.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/47265312313211-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345672121232",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 44717719,
+        "baseline_path": [
+          "R",
+          "B",
+          "D2",
+          "B",
+          "R",
+          "D'",
+          "B",
+          "D'",
+          "B'",
+          "R2",
+          "B2"
+        ]
+      },
+      "path": [
+        "R",
+        "B",
+        "D2",
+        "B",
+        "R",
+        "D'",
+        "B",
+        "D'",
+        "B'",
+        "R2",
+        "B2"
+      ],
+      "instructions": 16390209,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12345672121232.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12345672121232-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "14736251111132",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 27353292,
+        "baseline_path": [
+          "R",
+          "B2",
+          "R",
+          "D",
+          "R2",
+          "B2",
+          "R'",
+          "D'",
+          "B2",
+          "D",
+          "R'"
+        ]
+      },
+      "path": [
+        "R",
+        "B2",
+        "R",
+        "D",
+        "R2",
+        "B2",
+        "R'",
+        "D'",
+        "B2",
+        "D",
+        "R'"
+      ],
+      "instructions": 11828617,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/14736251111132.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/14736251111132-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "21345671111111",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 34934509,
+        "baseline_path": [
+          "R",
+          "B'",
+          "D2",
+          "R'",
+          "B",
+          "R'",
+          "B'",
+          "R",
+          "D2",
+          "R",
+          "B"
+        ]
+      },
+      "path": [
+        "R",
+        "B'",
+        "D2",
+        "R'",
+        "B",
+        "R'",
+        "B'",
+        "R",
+        "D2",
+        "R",
+        "B"
+      ],
+      "instructions": 15092396,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/21345671111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/21345671111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "27615433313213",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 25288613,
+        "baseline_path": [
+          "R",
+          "B",
+          "R",
+          "B2",
+          "R2",
+          "B",
+          "D'",
+          "R",
+          "B'",
+          "R",
+          "B"
+        ]
+      },
+      "path": [
+        "R",
+        "B",
+        "R",
+        "B2",
+        "R2",
+        "B",
+        "D'",
+        "R",
+        "B'",
+        "R",
+        "B"
+      ],
+      "instructions": 11388826,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/27615433313213.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/27615433313213-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "34561721111111",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 31343047,
+        "baseline_path": [
+          "R",
+          "B2",
+          "R'",
+          "D'",
+          "R'",
+          "D",
+          "B2",
+          "R",
+          "D'",
+          "R",
+          "D'"
+        ]
+      },
+      "path": [
+        "R",
+        "B2",
+        "R'",
+        "D'",
+        "R'",
+        "D",
+        "B2",
+        "R",
+        "D'",
+        "R",
+        "D'"
+      ],
+      "instructions": 13598095,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/34561721111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/34561721111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "41725632322331",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 24913600,
+        "baseline_path": [
+          "R",
+          "B2",
+          "R'",
+          "B",
+          "D2",
+          "B'",
+          "R",
+          "D2",
+          "B'",
+          "R'",
+          "B2"
+        ]
+      },
+      "path": [
+        "R",
+        "B2",
+        "R'",
+        "B",
+        "D2",
+        "B'",
+        "R",
+        "D2",
+        "B'",
+        "R'",
+        "B2"
+      ],
+      "instructions": 11430948,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41725632322331.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/41725632322331-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "51732643121213",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 35558121,
+        "baseline_path": [
+          "R",
+          "B",
+          "D'",
+          "R",
+          "B'",
+          "D'",
+          "R",
+          "D2",
+          "R",
+          "D",
+          "R'"
+        ]
+      },
+      "path": [
+        "R",
+        "B",
+        "D'",
+        "R",
+        "B'",
+        "D'",
+        "R",
+        "D2",
+        "R",
+        "D",
+        "R'"
+      ],
+      "instructions": 14146448,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/51732643121213.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/51732643121213-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "56341273121213",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 35601629,
+        "baseline_path": [
+          "R",
+          "D",
+          "B2",
+          "D2",
+          "B",
+          "R",
+          "B",
+          "R'",
+          "D2",
+          "R'",
+          "B"
+        ]
+      },
+      "path": [
+        "R",
+        "D",
+        "B2",
+        "D2",
+        "B",
+        "R",
+        "B",
+        "R'",
+        "D2",
+        "R'",
+        "B"
+      ],
+      "instructions": 15125963,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/56341273121213.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/56341273121213-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "67254313311113",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 26068008,
+        "baseline_path": [
+          "R",
+          "B",
+          "R'",
+          "D",
+          "R2",
+          "D'",
+          "B",
+          "D'",
+          "R",
+          "B",
+          "D2"
+        ]
+      },
+      "path": [
+        "R",
+        "B",
+        "R'",
+        "D",
+        "R2",
+        "D'",
+        "B",
+        "D'",
+        "R",
+        "B",
+        "D2"
+      ],
+      "instructions": 11816481,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/67254313311113.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/67254313311113-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "74156323132331",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 24814363,
+        "baseline_path": [
+          "R",
+          "B",
+          "R'",
+          "D2",
+          "B'",
+          "D",
+          "B",
+          "R",
+          "D2",
+          "R2",
+          "D"
+        ]
+      },
+      "path": [
+        "R",
+        "B",
+        "R'",
+        "D2",
+        "B'",
+        "D",
+        "B",
+        "R",
+        "D2",
+        "R2",
+        "D"
+      ],
+      "instructions": 11278686,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/74156323132331.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/74156323132331-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "76543212132323",
+      "expected": {
+        "distance": 11,
+        "baseline_instructions": 26412377,
+        "baseline_path": [
+          "R",
+          "B",
+          "D'",
+          "R",
+          "D'",
+          "B2",
+          "R2",
+          "D",
+          "R",
+          "B",
+          "D'"
+        ]
+      },
+      "path": [
+        "R",
+        "B",
+        "D'",
+        "R",
+        "D'",
+        "B2",
+        "R2",
+        "D",
+        "R",
+        "B",
+        "D'"
+      ],
+      "instructions": 11637131,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/76543212132323.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/76543212132323-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+        "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    }
+  ],
+  "seconds": 35.890960042132065,
+  "fingerprint": {
+    "elf": "f53c6f81002c9b688062d0cc1a07adf547fe3531b9ee6e1cee59dcc70cbb3a07",
+    "source": "e93abdd9f05c8595aa0694efcc37076f8dc36568409a8827af3f5ea90a6d66c6",
+    "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "input": "54721631111111",
+  "instructions": 37730599,
+  "path": [
+    "B2",
+    "R'",
+    "B",
+    "R'",
+    "D'",
+    "B",
+    "R2",
+    "B",
+    "R",
+    "B",
+    "D'"
+  ],
+  "replay": "PASS",
+  "seconds": 5.298540374962613,
+  "command": [
+    "/Applications/Ripes.app/Contents/MacOS/Ripes",
+    "--mode",
+    "cli",
+    "--src",
+    "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/boundary/54721631111111.elf",
+    "-t",
+    "elf",
+    "--proc",
+    "RV32_ISS",
+    "--iret",
+    "--cycles",
+    "--runinfo",
+    "--timeout",
+    "0",
+    "-v",
+    "--output",
+    "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/boundary/54721631111111-iret.txt"
+  ],
+  "source_sha256": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+  "elf_sha256": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+  "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}

@@ -1,0 +1,495 @@
+{
+  "cases": [
+    {
+      "input": "12345671111111",
+      "expected": {
+        "distance": 0,
+        "oracle_rank": 0
+      },
+      "path": [],
+      "instructions": 424,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12356741112323",
+      "expected": {
+        "distance": 1,
+        "oracle_rank": 6577
+      },
+      "path": [
+        "B'"
+      ],
+      "instructions": 1425,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12356741112323.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12356741112323-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "13462751111111",
+      "expected": {
+        "distance": 2,
+        "oracle_rank": 114453
+      },
+      "path": [
+        "D'",
+        "B2"
+      ],
+      "instructions": 2309,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/13462751111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/13462751111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12435761111111",
+      "expected": {
+        "distance": 3,
+        "oracle_rank": 18225
+      },
+      "path": [
+        "D'",
+        "B2",
+        "D"
+      ],
+      "instructions": 2964,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12435761111111.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12435761111111-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12435761231321",
+      "expected": {
+        "distance": 4,
+        "oracle_rank": 18367
+      },
+      "path": [
+        "B2",
+        "D2",
+        "B",
+        "D'"
+      ],
+      "instructions": 4304,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12435761231321.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12435761231321-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12354762123131",
+      "expected": {
+        "distance": 5,
+        "oracle_rank": 5393
+      },
+      "path": [
+        "D2",
+        "R'",
+        "B2",
+        "D",
+        "R2"
+      ],
+      "instructions": 4484,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12354762123131.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12354762123131-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345671112323",
+      "expected": {
+        "distance": 6,
+        "oracle_rank": 16
+      },
+      "path": [
+        "R2",
+        "B2",
+        "R",
+        "B2",
+        "R2",
+        "B"
+      ],
+      "instructions": 43722,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671112323.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671112323-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345671122133",
+      "expected": {
+        "distance": 7,
+        "oracle_rank": 38
+      },
+      "path": [
+        "D'",
+        "B",
+        "D2",
+        "B2",
+        "D",
+        "B2",
+        "D'"
+      ],
+      "instructions": 157467,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671122133.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671122133-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345671111222",
+      "expected": {
+        "distance": 8,
+        "oracle_rank": 4
+      },
+      "path": [
+        "R'",
+        "B2",
+        "R",
+        "B",
+        "R'",
+        "B",
+        "R",
+        "B2"
+      ],
+      "instructions": 386155,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671111222.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671111222-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345671122112",
+      "expected": {
+        "distance": 9,
+        "oracle_rank": 36
+      },
+      "path": [
+        "B",
+        "R2",
+        "B",
+        "R",
+        "D'",
+        "R",
+        "B",
+        "D2",
+        "B2"
+      ],
+      "instructions": 1674183,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671122112.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671122112-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345671111123",
+      "expected": {
+        "distance": 10,
+        "oracle_rank": 1
+      },
+      "path": [
+        "R",
+        "D2",
+        "B2",
+        "R'",
+        "B'",
+        "R",
+        "B'",
+        "D",
+        "R'",
+        "B"
+      ],
+      "instructions": 4043349,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671111123.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671111123-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    },
+    {
+      "input": "12345672121232",
+      "expected": {
+        "distance": 11,
+        "oracle_rank": 275
+      },
+      "path": [
+        "R",
+        "B",
+        "D2",
+        "B",
+        "R",
+        "D'",
+        "B",
+        "D'",
+        "B'",
+        "R2",
+        "B2"
+      ],
+      "instructions": 16119224,
+      "replay": "PASS",
+      "command": [
+        "/Applications/Ripes.app/Contents/MacOS/Ripes",
+        "--mode",
+        "cli",
+        "--src",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345672121232.elf",
+        "-t",
+        "elf",
+        "--proc",
+        "RV32_ISS",
+        "--iret",
+        "--cycles",
+        "--runinfo",
+        "--timeout",
+        "0",
+        "-v",
+        "--output",
+        "/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345672121232-iret.txt"
+      ],
+      "fingerprint": {
+        "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+        "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+        "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+      }
+    }
+  ],
+  "seconds": 7.64543104195036,
+  "fingerprint": {
+    "elf": "47038717486c308c288c08e872ca54b9dfae35a348b0c996fadeebd1cd8280c6",
+    "source": "0193400adc992fd52694e17a540f897528c47c7c73e79950cf1d3bcbabff6c09",
+    "ripes": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+  }
+}

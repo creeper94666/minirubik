@@ -3,11 +3,27 @@
 [Current files](#current-rv32i-version) · [Three target tests](#three-target-tests) ·
 [H1–H4 / T5–T7](#correctness-gates) · [Performance and memory](#performance-and-memory)
 
-## Report and submission snapshot
+## Latest recording and source package — 2026-10-17
 
-[Completed English report](docs/hackmd-final-report.md) · [Four evidence-based analysis sections](docs/hackmd-four-sections.md)
+Start with [final_solver/](final_solver/README.md). It contains solver2, the C
+comparison baseline, the current search C, the latest optimized RV32I assembly,
+build dependencies, ELF files, and the shortened recording script.
 
-The selected source/evidence snapshot is `15b486ae9c5496b6ca15bef62715eb6287765531`, including the complete GUI observations. The replacement tag name is `hw1-phase1-2026-10-08-final`; it has been created locally, but remote publication is pending GitHub authentication. The historical `hw1-phase1-2026-10-07` tag does not include the later GUI evidence. The report draft must still be saved to HackMD and the submission form updated to the replacement tag and report revision after publication.
+The latest assembly removes the per-node goal scan and returns when an accepted
+child reaches the iterative-deepening limit. Paired RV32_ISS measurements are
+**14,836,245** instructions for `21345671111111` and **37,730,599** for
+`54721631111111`. Static data is 126,079 bytes; text is 4,252 bytes.
+
+The latest binary passes 31 target regression cases and 12 oracle-selected cases
+covering exact distances 0 through 11, plus the assembly block tests.
+The previous exhaustive 2,644-case target sweep and pipeline results apply to
+the older pinned ELF, not to a new exhaustive run of this binary.
+See [latest evidence](measurements/solver7_solve_boundary/README.md).
+
+The earlier report and historical measurements remain below. Their dates,
+snapshot hashes, and validation limits should be read as historical evidence.
+Current schedule: all deliverables, including the explanatory video, are due
+October 18, 2026, 23:59 GMT+8; the earlier two-phase schedule was canceled.
 
 ## Current RV32I version
 
@@ -33,7 +49,7 @@ For LED animation, follow the [GUI build instructions](solver7_optimization_led_
 and supply the peripheral base exported by Ripes. `RENDER=0` disables the renderer;
 `RENDER=1` enables it in the shared source.
 
-The current assembly passes all **2,644 distance-11 inputs**, with a maximum of
+The previously pinned assembly passes all **2,644 distance-11 inputs**, with a maximum of
 **38,543,830 retired instructions** on the pinned RV32_ISS build. Solved, one-move
 and distance-11 cases also pass on RV32_5S. See [validation evidence](measurements/solver7_submission_validation/README.md).
 
@@ -368,3 +384,4 @@ empty line.
 
 See [`report.md`](report.md) for the model, algorithm, diagrams, and Frama-C
 validation notes.
+

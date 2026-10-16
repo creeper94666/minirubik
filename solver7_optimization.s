@@ -1,6 +1,6 @@
 # AI-assisted experimental optimization of compiler-generated solver7.s.
 # Build with build_solver7_optimization.sh; original solver7 files preserved.
-# Search: canonical suffix masks + inverse-orientation bound (solver7_search.c).
+# Search: canonical suffix masks + inverse bound; accepted-boundary goal return.
 # Frame: inverse scratch16..22, moves40..87, states88..255, saves256..303, masks304..351.
 	.file	"solver7.c"
 	.option nopic
@@ -209,7 +209,6 @@ solve.part.0:
 	sw	s1,296(sp)
 	sw	s10,260(sp)
 	sw	s11,256(sp)
-	li	s0,7
 	addi	s3,sp,40
 	li	t3,2
 	la s7,opt_sequence3
@@ -232,47 +231,8 @@ solve.part.0:
 	addi	a4,s2,-1
 	mv	a3,a6
 .L6:
-	slli	t1,a0,3
-	sub	a2,t1,a0
-	slli	a2,a2,1
-	add	a5,s9,a2
-	li	a6,0
-.L8:
-	lbu	a7,0(a5)
-	bne	a7,a6,.L7
-	lbu	a7,7(a5)
-	addi	a6,a6,1
-	addi	a5,a5,1
-	bne	a7,zero,.L7
-	bne	a6,s0,.L8
-	beq	a0,zero,.L60
-	addi	a5,sp,40
-	slli	a3,a0,2
-	add	a3,a3,a5
-.L10:
-	lw	a4,0(a5)
-	addi	a5,a5,4
-	addi	a1,a1,4
-	sw	a4,-4(a1)
-	bne	a3,a5,.L10
-.L60:
-	lw	s1,296(sp)
-	lw	s3,288(sp)
-	lw	s7,272(sp)
-	lw	s8,268(sp)
-	lw	s10,260(sp)
-	lw	s11,256(sp)
-.L1:
-	lw	s0,300(sp)
-	lw	s2,292(sp)
-	lw	s4,284(sp)
-	lw	s5,280(sp)
-	lw	s6,276(sp)
-	lw	s9,264(sp)
-	addi	sp,sp,368
-	jr	ra
+	slli t1,a0,3
 .L7:
-	beq	s2,a0,.L65
 	slli	t6,a0,2
 	add	a5,s3,t6
 	lw	s1,0(a5)
@@ -793,6 +753,8 @@ solve.part.0:
 .L69:
 	add a5,s3,a5
 	sw t0,0(a5)
+	beq s10,s2,.Lsolve_found
+.Lsolve_accept_end:
 	slli a5,s10,2
 	add a5,s3,a5
 	sw zero,0(a5)
@@ -885,6 +847,35 @@ solve.part.0:
 	sw	a5,0(t6)
 	mv	a0,t1
 	j	.L12
+.Lsolve_found:
+	mv a0,s10
+	j .Lsolve_copy
+.Lsolve_copy:
+	addi	a5,sp,40
+	slli	a3,a0,2
+	add	a3,a3,a5
+.L10:
+	lw	a4,0(a5)
+	addi	a5,a5,4
+	addi	a1,a1,4
+	sw	a4,-4(a1)
+	bne	a3,a5,.L10
+.L60:
+	lw	s1,296(sp)
+	lw	s3,288(sp)
+	lw	s7,272(sp)
+	lw	s8,268(sp)
+	lw	s10,260(sp)
+	lw	s11,256(sp)
+.L1:
+	lw	s0,300(sp)
+	lw	s2,292(sp)
+	lw	s4,284(sp)
+	lw	s5,280(sp)
+	lw	s6,276(sp)
+	lw	s9,264(sp)
+	addi	sp,sp,368
+	jr	ra
 .L49:
 	li	a0,-1
 	j	.L1

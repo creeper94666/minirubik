@@ -1,0 +1,8 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target_depths/12345671122133.elf'
+=============================== Running model ===============================
+D' B D2 B2 D B2 D'
+
+Program exited with code: 0
+================================== Post-run ==================================

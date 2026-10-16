@@ -1,0 +1,9 @@
+===== cycles
+16390209
+===== instructions retired
+16390209
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_ISS
+source file: /Users/eric_mac/CAHW1/measurements/solver7_solve_control/target/12345672121232.elf
+

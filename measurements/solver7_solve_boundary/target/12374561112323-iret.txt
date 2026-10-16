@@ -1,0 +1,9 @@
+===== cycles
+1260
+===== instructions retired
+1260
+===== simulation information (processor configuration, input file, ...)
+ISA extensions: 
+processor: RV32_ISS
+source file: /Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target/12374561112323.elf
+

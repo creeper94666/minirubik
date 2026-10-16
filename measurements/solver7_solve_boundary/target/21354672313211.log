@@ -1,0 +1,12 @@
+=============================== Ripes CLI mode ===============================
+=========================== Processing input file ===========================
+INFO: Loading elf file '/Users/eric_mac/CAHW1/measurements/solver7_solve_boundary/target/21354672313211.elf'
+=============================== Running model ===============================
+INFO: 00:00:01	cycles: 4363610	retired: 4363610
+INFO: 00:00:02	cycles: 14935179	retired: 14935179
+INFO: 00:00:03	cycles: 22394140	retired: 22394141
+INFO: 00:00:04	cycles: 32952311	retired: 32952312
+B2 R B' D R D2 B' R D R2 D'
+
+Program exited with code: 0
+================================== Post-run ==================================

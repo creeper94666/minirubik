@@ -1,0 +1,61 @@
+--- baseline
++++ customized
+@@ -209,7 +209,6 @@
+ 	sw	s1,296(sp)
+ 	sw	s10,260(sp)
+ 	sw	s11,256(sp)
+-	li	s0,7
+ 	addi	s3,sp,40
+ 	li	t3,2
+ 	la s7,opt_sequence3
+@@ -236,15 +235,42 @@
+ 	sub	a2,t1,a0
+ 	slli	a2,a2,1
+ 	add	a5,s9,a2
+-	li	a6,0
+ .L8:
+-	lbu	a7,0(a5)
+-	bne	a7,a6,.L7
+-	lbu	a7,7(a5)
+-	addi	a6,a6,1
+-	addi	a5,a5,1
+-	bne	a7,zero,.L7
+-	bne	a6,s0,.L8
++# Customized solve control: fixed-offset, early-exit goal test.
++	lbu a7,0(a5)
++	bnez a7,.L7
++	lbu a7,7(a5)
++	bnez a7,.L7
++	lbu a7,1(a5)
++	li a6,1
++	bne a7,a6,.L7
++	lbu a7,8(a5)
++	bnez a7,.L7
++	lbu a7,2(a5)
++	li a6,2
++	bne a7,a6,.L7
++	lbu a7,9(a5)
++	bnez a7,.L7
++	lbu a7,3(a5)
++	li a6,3
++	bne a7,a6,.L7
++	lbu a7,10(a5)
++	bnez a7,.L7
++	lbu a7,4(a5)
++	li a6,4
++	bne a7,a6,.L7
++	lbu a7,11(a5)
++	bnez a7,.L7
++	lbu a7,5(a5)
++	li a6,5
++	bne a7,a6,.L7
++	lbu a7,12(a5)
++	bnez a7,.L7
++	lbu a7,6(a5)
++	li a6,6
++	bne a7,a6,.L7
++	lbu a7,13(a5)
++	bnez a7,.L7
+ 	beq	a0,zero,.L60
+ 	addi	a5,sp,40
+ 	slli	a3,a0,2

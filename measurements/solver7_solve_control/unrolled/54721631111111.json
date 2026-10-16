@@ -1,0 +1,41 @@
+{
+  "input": "54721631111111",
+  "instructions": 38508627,
+  "path": [
+    "B2",
+    "R'",
+    "B",
+    "R'",
+    "D'",
+    "B",
+    "R2",
+    "B",
+    "R",
+    "B",
+    "D'"
+  ],
+  "replay": "PASS",
+  "seconds": 3.46755150007084,
+  "command": [
+    "/Applications/Ripes.app/Contents/MacOS/Ripes",
+    "--mode",
+    "cli",
+    "--src",
+    "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/unrolled/54721631111111.elf",
+    "-t",
+    "elf",
+    "--proc",
+    "RV32_ISS",
+    "--iret",
+    "--cycles",
+    "--runinfo",
+    "--timeout",
+    "0",
+    "-v",
+    "--output",
+    "/Users/eric_mac/CAHW1/measurements/solver7_solve_control/unrolled/54721631111111-iret.txt"
+  ],
+  "source_sha256": "5ad829c4de1f504f67fbe4ba7b80d0ef2467b2ae768f737047b29c27def25a20",
+  "elf_sha256": "ee64e79410647ba6649808e6f2236cfefcde3a94ada3c6f3b340faa138c94ddd",
+  "ripes_sha256": "bea887fcf020c1dda1f44177c19c27a13f3b93c625b17194ac37e3d421a34fc4"
+}
